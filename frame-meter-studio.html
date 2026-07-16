@@ -1,0 +1,598 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>フレームメーター・スタジオ</title>
+<style>
+  :root {
+    --bg: #0a0c10;
+    --panel: #12151b;
+    --panel-2: #171b22;
+    --line: #262b35;
+    --line-strong: #3a4150;
+    --text: #e9edf3;
+    --text-dim: #8891a1;
+    --accent: #ff5a1f;
+    --accent-dim: rgba(255, 90, 31, 0.16);
+
+    --f-startup: #57c7ff;
+    --f-active: #ff4757;
+    --f-recovery: #6b7686;
+    --f-blockstun: #b98bff;
+    --f-hitstun: #ffd166;
+    --f-throwtech: #43e6b5;
+
+    --adv: #43e6b5;
+    --disadv: #ff6b57;
+    --tag: #8891a1;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", "Yu Gothic UI", "Hiragino Kaku Gothic ProN", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .stage {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 20px 60px;
+  }
+
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 18px;
+    height: 3px;
+    background: var(--accent);
+    display: inline-block;
+  }
+
+  h1 {
+    margin: 10px 0 4px;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+  }
+
+  .lede {
+    margin: 0 0 22px;
+    max-width: 62ch;
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .tab {
+    appearance: none;
+    border: 1px solid var(--line-strong);
+    background: var(--panel-2);
+    color: var(--text-dim);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    letter-spacing: 0.01em;
+  }
+  .tab:hover { color: var(--text); border-color: var(--text-dim); }
+  .tab.active {
+    color: #0a0c10;
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 18px 18px 14px;
+    position: relative;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 22px; height: 22px;
+    border-top: 2px solid var(--accent);
+    border-left: 2px solid var(--accent);
+  }
+
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 6px;
+  }
+  .card-title { font-size: 15px; font-weight: 700; }
+  .card-desc { margin: 4px 0 0; font-size: 12.5px; color: var(--text-dim); line-height: 1.6; max-width: 58ch; }
+  .card-note { margin: 2px 0 0; font-size: 11px; color: #5c6474; }
+
+  .readout {
+    flex: 0 0 auto;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    border: 1px solid var(--line-strong);
+    background: var(--panel-2);
+    padding: 6px 12px;
+    min-width: 150px;
+    border-radius: 2px;
+  }
+  .readout .fnum { font-size: 20px; font-weight: 800; color: var(--accent); line-height: 1.1; }
+  .readout .flabel { font-size: 10px; color: var(--text-dim); letter-spacing: 0.08em; text-transform: uppercase; }
+  .readout .flines { margin-top: 4px; font-size: 11px; color: var(--text-dim); line-height: 1.5; }
+
+  .chart-scroll {
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+
+  svg.chart { display: block; cursor: crosshair; }
+  svg.chart text { font-family: inherit; }
+  .lane-label { font-size: 11.5px; font-weight: 700; fill: var(--text); }
+  .lane-sub { font-size: 10px; fill: var(--text-dim); }
+  .ruler-num { font-size: 10px; fill: var(--text-dim); font-variant-numeric: tabular-nums; }
+  .seg-label { font-size: 9px; fill: #0a0c10; font-weight: 700; pointer-events: none; }
+  .ann-text { font-size: 10.5px; font-weight: 700; }
+  .conn { fill: none; stroke: var(--line-strong); stroke-width: 1.5; }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11.5px; color: var(--text-dim); }
+  .swatch { width: 11px; height: 16px; border-radius: 1px; flex: none; }
+
+  .howto {
+    margin-top: 18px;
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.8;
+  }
+  .howto code {
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    padding: 1px 5px;
+    border-radius: 2px;
+    color: #cfe8ff;
+    font-size: 11px;
+  }
+</style>
+
+<div class="stage">
+  <div class="eyebrow">Frame Meter Studio</div>
+  <h1>格ゲー風フレームメーターUI</h1>
+  <p class="lede">
+    スト6の対戦画面にあるフレームメーター(発生・持続・硬直をバーで示す表示)の見た目だけを再現するツールです。
+    上の数値はすべて説明用のサンプルで、特定キャラクターの実数値ではありません。
+  </p>
+
+  <div class="tabs" id="tabs" role="tablist"></div>
+
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <div class="card-title" id="title"></div>
+        <p class="card-desc" id="desc"></p>
+        <p class="card-note" id="note"></p>
+      </div>
+      <div class="readout">
+        <div class="flabel">Cursor</div>
+        <div class="fnum" id="fnum">F--</div>
+        <div class="flines" id="flines"></div>
+      </div>
+    </div>
+
+    <div class="chart-scroll">
+      <svg class="chart" id="chart"></svg>
+    </div>
+
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <p class="howto">
+    ルーラー付近をクリック／ドラッグするとカーソル(白線)を好きなフレームに固定できます。バーにマウスを乗せると内訳がツールチップで出ます。
+    自分でチャートを作る場合はこのファイル内 <code>DATASETS</code> を編集してください。1レーン = <code>{ id, label, sub, startFrame, segments, connect }</code>、
+    分岐は <code>connect: { from: '親レーンid', atFrame: 分岐フレーム }</code> を指定すると、その位置から下に配線されます。
+  </p>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---- 見た目のサイズ設定 -------------------------------------------------
+  var CELL_H = 24;      // 1フレームセルの高さ
+  var CELL_GAP = 2;     // セル間のすき間
+  var UNIT_W = CELL_H * 2 / 3 + CELL_GAP; // 1フレームあたりの幅 (セル本体は幅:高さ=2:3)
+  var LANE_STEP = 58;   // レーン1本あたりの縦の間隔 (注釈スペース込み)
+  var LEFT_MARGIN = 176;
+  var TOP_MARGIN = 34;
+  var RIGHT_MARGIN = 24;
+  var BOTTOM_MARGIN = 14;
+
+  var TYPE_INFO = {
+    startup:   { color: "var(--f-startup)",   label: "発生" },
+    active:    { color: "var(--f-active)",    label: "持続" },
+    recovery:  { color: "var(--f-recovery)",  label: "硬直" },
+    blockstun: { color: "var(--f-blockstun)", label: "ガード硬直" },
+    hitstun:   { color: "var(--f-hitstun)",   label: "ヒット硬直" },
+    throwtech: { color: "var(--f-throwtech)", label: "投げ抜け猶予" },
+    gap:       { color: "transparent",        label: "空き(行動可)" }
+  };
+
+  // ---- サンプルデータ ------------------------------------------------------
+  // segments の frames を積み上げていくと startFrame からの絶対フレーム位置になる。
+  var DATASETS = [
+    {
+      id: "basic",
+      title: "基本: 有利フレームの読み方",
+      desc: "自分の技が相手のガードに当たったとき、双方が動けるようになるタイミングのズレを表す。差が「有利/不利フレーム」。",
+      note: "※ 数値は説明用の一例です",
+      totalFrames: 26,
+      lanes: [
+        {
+          id: "p1", label: "自分", sub: "発生4 / 持続2 / 硬直7", startFrame: 0,
+          segments: [
+            { type: "startup", frames: 4 },
+            { type: "active", frames: 2, label: "HIT" },
+            { type: "recovery", frames: 7 }
+          ]
+        },
+        {
+          id: "p2", label: "相手", sub: "ガード硬直9", startFrame: 6,
+          segments: [
+            { type: "blockstun", frames: 9 }
+          ]
+        }
+      ],
+      annotations: [
+        { laneId: "p1", frame: 13, text: "自分 行動可能", tone: "adv" },
+        { laneId: "p2", frame: 15, text: "相手 行動可能", tone: "neutral" },
+        { laneId: "p1", frame: 13, text: "+2F 有利", tone: "adv", big: true }
+      ]
+    },
+    {
+      id: "mixup",
+      title: "密着+1Fの固め択",
+      desc: "有利フレームが+1のとき、相手の起き上がり(硬直明け)に対して自分が選べる択を分岐で整理する例。",
+      note: "※ 数値は説明用の一例です。実際の投げ間合いや無敵は技ごとに異なります",
+      totalFrames: 30,
+      lanes: [
+        {
+          id: "root", label: "自分", sub: "硬直明けまで", startFrame: 0,
+          segments: [ { type: "recovery", frames: 10 } ]
+        },
+        {
+          id: "throw", label: "① 投げ", sub: "最速で投げる", startFrame: 10,
+          connect: { from: "root", atFrame: 10 },
+          segments: [ { type: "startup", frames: 3 }, { type: "active", frames: 2, label: "投" } ]
+        },
+        {
+          id: "strike", label: "② 打撃(中/下段)", sub: "択の分岐その2", startFrame: 10,
+          connect: { from: "root", atFrame: 10 },
+          segments: [ { type: "startup", frames: 4 }, { type: "active", frames: 3, label: "撃" }, { type: "recovery", frames: 8 } ]
+        },
+        {
+          id: "delay", label: "③ 遅らせ投げ", sub: "暴れ/抜け潰し狙い", startFrame: 12,
+          connect: { from: "root", atFrame: 10 },
+          segments: [ { type: "startup", frames: 3 }, { type: "active", frames: 2, label: "投" } ]
+        },
+        {
+          id: "opptech", label: "相手 投げ抜け猶予", sub: "比較用の参考レーン", startFrame: 10,
+          connect: { from: "root", atFrame: 10 },
+          segments: [ { type: "throwtech", frames: 3 } ]
+        }
+      ],
+      annotations: [
+        { laneId: "root", frame: 10, text: "+1F 密着", tone: "adv", big: true },
+        { laneId: "throw", frame: 13, text: "抜け猶予と重なる", tone: "disadv" },
+        { laneId: "delay", frame: 17, text: "猶予終了後 → 安定", tone: "adv" }
+      ]
+    },
+    {
+      id: "delaythrow",
+      title: "遅らせグラップの仕組み",
+      desc: "相手の投げ抜け猶予(テックウィンドウ)が終わってから投げることで、暴れやテック狙いを狩る「遅らせ投げ」の考え方。",
+      note: "※ 数値は説明用の一例です",
+      totalFrames: 24,
+      lanes: [
+        {
+          id: "defender", label: "相手", sub: "投げ抜け猶予の位置", startFrame: 0,
+          segments: [
+            { type: "gap", frames: 3 },
+            { type: "throwtech", frames: 3 },
+            { type: "gap", frames: 12 }
+          ]
+        },
+        {
+          id: "normal", label: "① 通常投げ(最速)", sub: "猶予と被る", startFrame: 3,
+          connect: { from: "defender", atFrame: 0 },
+          segments: [ { type: "startup", frames: 3 }, { type: "active", frames: 2, label: "投" } ]
+        },
+        {
+          id: "delayed", label: "② 遅らせ投げ", sub: "猶予終了後に発生", startFrame: 8,
+          connect: { from: "defender", atFrame: 0 },
+          segments: [ { type: "startup", frames: 3 }, { type: "active", frames: 2, label: "投" } ]
+        }
+      ],
+      annotations: [
+        { laneId: "normal", frame: 3, text: "抜けられる恐れ", tone: "disadv" },
+        { laneId: "delayed", frame: 8, text: "猶予終了後で安定", tone: "adv" }
+      ]
+    }
+  ];
+
+  // ---- レンダリング --------------------------------------------------------
+  var chartEl = document.getElementById("chart");
+  var titleEl = document.getElementById("title");
+  var descEl = document.getElementById("desc");
+  var noteEl = document.getElementById("note");
+  var legendEl = document.getElementById("legend");
+  var tabsEl = document.getElementById("tabs");
+  var fnumEl = document.getElementById("fnum");
+  var flinesEl = document.getElementById("flines");
+
+  var current = DATASETS[0];
+  var cursorFrame = null;
+
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    return el;
+  }
+
+  function laneY(index) { return TOP_MARGIN + index * LANE_STEP; }
+
+  function segmentsEnd(lane) {
+    var f = lane.startFrame;
+    for (var i = 0; i < lane.segments.length; i++) f += lane.segments[i].frames;
+    return f;
+  }
+
+  function typeAtFrame(lane, frame) {
+    var f = lane.startFrame;
+    if (frame < f) return null;
+    for (var i = 0; i < lane.segments.length; i++) {
+      var seg = lane.segments[i];
+      if (frame < f + seg.frames) return seg.type === "gap" ? null : TYPE_INFO[seg.type].label;
+      f += seg.frames;
+    }
+    return null;
+  }
+
+  function render() {
+    var ds = current;
+    var laneIndexOf = {};
+    ds.lanes.forEach(function (l, i) { laneIndexOf[l.id] = i; });
+
+    var totalFrames = ds.totalFrames;
+    var width = LEFT_MARGIN + totalFrames * UNIT_W + RIGHT_MARGIN;
+    var height = TOP_MARGIN + ds.lanes.length * LANE_STEP + BOTTOM_MARGIN;
+
+    while (chartEl.firstChild) chartEl.removeChild(chartEl.firstChild);
+    chartEl.setAttribute("width", width);
+    chartEl.setAttribute("height", height);
+    chartEl.setAttribute("viewBox", "0 0 " + width + " " + height);
+
+    // --- ルーラー ---
+    var rulerY = TOP_MARGIN - 16;
+    for (var f = 0; f <= totalFrames; f += 5) {
+      var x = LEFT_MARGIN + f * UNIT_W;
+      chartEl.appendChild(svgEl("line", {
+        x1: x, x2: x, y1: rulerY, y2: rulerY + 6, stroke: "var(--line-strong)", "stroke-width": 1
+      }));
+      var t = svgEl("text", { x: x, y: rulerY - 4, class: "ruler-num", "text-anchor": "middle" });
+      t.textContent = f;
+      chartEl.appendChild(t);
+    }
+    chartEl.appendChild(svgEl("line", {
+      x1: LEFT_MARGIN, x2: LEFT_MARGIN + totalFrames * UNIT_W, y1: rulerY + 6, y2: rulerY + 6,
+      stroke: "var(--line)", "stroke-width": 1
+    }));
+
+    // --- 分岐の配線 (先にレーン本体の下に描く) ---
+    ds.lanes.forEach(function (lane, i) {
+      if (!lane.connect) return;
+      var parentIdx = laneIndexOf[lane.connect.from];
+      if (parentIdx === undefined) return;
+      var xFork = LEFT_MARGIN + (lane.connect.atFrame + 0.5) * UNIT_W;
+      var xStart = LEFT_MARGIN + lane.startFrame * UNIT_W;
+      var yParentBottom = laneY(parentIdx) + CELL_H;
+      var yChildTop = laneY(i);
+      var yMid = yChildTop - 14;
+      var d = "M " + xFork + " " + yParentBottom +
+        " L " + xFork + " " + yMid +
+        " L " + xStart + " " + yMid +
+        " L " + xStart + " " + yChildTop;
+      chartEl.appendChild(svgEl("path", { d: d, class: "conn" }));
+    });
+
+    // --- レーン本体 ---
+    ds.lanes.forEach(function (lane, i) {
+      var y = laneY(i);
+      var indent = lane.connect ? 14 : 0;
+
+      var label = svgEl("text", { x: 4 + indent, y: y + CELL_H * 0.42, class: "lane-label" });
+      label.textContent = lane.label;
+      chartEl.appendChild(label);
+
+      if (lane.sub) {
+        var sub = svgEl("text", { x: 4 + indent, y: y + CELL_H * 0.42 + 13, class: "lane-sub" });
+        sub.textContent = lane.sub;
+        chartEl.appendChild(sub);
+      }
+
+      var x = LEFT_MARGIN + lane.startFrame * UNIT_W;
+      var absFrame = lane.startFrame;
+      lane.segments.forEach(function (seg) {
+        var info = TYPE_INFO[seg.type];
+        var segStartX = x;
+        for (var i = 0; i < seg.frames; i++) {
+          var rect = svgEl("rect", {
+            x: x, y: y, width: UNIT_W - CELL_GAP, height: CELL_H,
+            fill: info.color,
+            stroke: seg.type === "gap" ? "var(--line-strong)" : "none",
+            "stroke-dasharray": seg.type === "gap" ? "3,2" : "none",
+            rx: 1
+          });
+          var title = svgEl("title", {});
+          title.textContent = "F" + absFrame + " " + info.label;
+          rect.appendChild(title);
+          chartEl.appendChild(rect);
+          x += UNIT_W;
+          absFrame += 1;
+        }
+
+        var segW = seg.frames * UNIT_W - CELL_GAP;
+        if (seg.label && segW > 16) {
+          var st = svgEl("text", {
+            x: segStartX + segW / 2, y: y + CELL_H / 2 + 3, class: "seg-label", "text-anchor": "middle"
+          });
+          st.textContent = seg.label;
+          chartEl.appendChild(st);
+        }
+      });
+    });
+
+    // --- 注釈 ---
+    (ds.annotations || []).forEach(function (ann) {
+      var idx = laneIndexOf[ann.laneId];
+      if (idx === undefined) return;
+      var x = LEFT_MARGIN + ann.frame * UNIT_W;
+      var y = laneY(idx) - 6;
+      var color = ann.tone === "adv" ? "var(--adv)" : ann.tone === "disadv" ? "var(--disadv)" : "var(--tag)";
+      chartEl.appendChild(svgEl("line", { x1: x, x2: x, y1: y - 12, y2: y, stroke: color, "stroke-width": 1.5 }));
+      var t = svgEl("text", {
+        x: x, y: y - 15, class: "ann-text", "text-anchor": ann.frame > totalFrames - 8 ? "end" : "start",
+        fill: color, style: ann.big ? "font-size:13px" : ""
+      });
+      t.textContent = ann.text;
+      chartEl.appendChild(t);
+    });
+
+    // --- カーソル ---
+    var cursorGroup = svgEl("g", { id: "cursorGroup" });
+    var cx = cursorFrame == null ? -100 : LEFT_MARGIN + (cursorFrame + 0.5) * UNIT_W;
+    cursorGroup.appendChild(svgEl("line", {
+      x1: cx, x2: cx, y1: TOP_MARGIN - 20, y2: height - BOTTOM_MARGIN,
+      stroke: "#ffffff", "stroke-width": 1.5, opacity: 0.85
+    }));
+    chartEl.appendChild(cursorGroup);
+
+    // --- クリック/ドラッグ検知用の透明オーバーレイ ---
+    var overlay = svgEl("rect", {
+      x: LEFT_MARGIN, y: 0, width: totalFrames * UNIT_W, height: height,
+      fill: "transparent"
+    });
+    overlay.addEventListener("pointerdown", function (e) {
+      dragging = true;
+      updateCursorFromEvent(e);
+      overlay.setPointerCapture(e.pointerId);
+    });
+    overlay.addEventListener("pointermove", function (e) {
+      if (dragging) updateCursorFromEvent(e);
+    });
+    overlay.addEventListener("pointerup", function () { dragging = false; });
+    chartEl.appendChild(overlay);
+
+    // --- 凡例 (このデータセットで使われている種類だけ) ---
+    var used = {};
+    ds.lanes.forEach(function (l) { l.segments.forEach(function (s) { used[s.type] = true; }); });
+    while (legendEl.firstChild) legendEl.removeChild(legendEl.firstChild);
+    Object.keys(TYPE_INFO).forEach(function (key) {
+      if (!used[key]) return;
+      var item = document.createElement("div");
+      item.className = "legend-item";
+      var sw = document.createElement("span");
+      sw.className = "swatch";
+      sw.style.background = TYPE_INFO[key].color;
+      if (key === "gap") { sw.style.border = "1px dashed var(--line-strong)"; }
+      item.appendChild(sw);
+      var label = document.createElement("span");
+      label.textContent = TYPE_INFO[key].label;
+      item.appendChild(label);
+      legendEl.appendChild(item);
+    });
+
+    titleEl.textContent = ds.title;
+    descEl.textContent = ds.desc;
+    noteEl.textContent = ds.note || "";
+    updateReadout();
+  }
+
+  var dragging = false;
+
+  function updateCursorFromEvent(e) {
+    var rect = chartEl.getBoundingClientRect();
+    var scaleX = chartEl.viewBox.baseVal.width / rect.width;
+    var xInSvg = (e.clientX - rect.left) * scaleX;
+    var frame = Math.floor((xInSvg - LEFT_MARGIN) / UNIT_W);
+    frame = Math.max(0, Math.min(current.totalFrames - 1, frame));
+    cursorFrame = frame;
+    var cx = LEFT_MARGIN + (cursorFrame + 0.5) * UNIT_W;
+    var group = document.getElementById("cursorGroup");
+    if (group) group.firstChild.setAttribute("x1", cx), group.firstChild.setAttribute("x2", cx);
+    updateReadout();
+  }
+
+  function updateReadout() {
+    if (cursorFrame == null) {
+      fnumEl.textContent = "F--";
+      flinesEl.innerHTML = "";
+      return;
+    }
+    fnumEl.textContent = "F" + cursorFrame;
+    var lines = current.lanes.map(function (lane) {
+      var t = typeAtFrame(lane, cursorFrame);
+      return lane.label + ": " + (t || "―");
+    });
+    flinesEl.innerHTML = lines.join("<br>");
+  }
+
+  function renderTabs() {
+    while (tabsEl.firstChild) tabsEl.removeChild(tabsEl.firstChild);
+    DATASETS.forEach(function (ds) {
+      var btn = document.createElement("button");
+      btn.className = "tab" + (ds.id === current.id ? " active" : "");
+      btn.type = "button";
+      btn.textContent = ds.title;
+      btn.addEventListener("click", function () {
+        current = ds;
+        cursorFrame = null;
+        renderTabs();
+        render();
+      });
+      tabsEl.appendChild(btn);
+    });
+  }
+
+  renderTabs();
+  render();
+})();
+</script>
