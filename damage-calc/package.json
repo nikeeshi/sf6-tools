@@ -1,0 +1,17 @@
+{
+  "name": "damage-calc",
+  "version": "1.0.0",
+  "description": "SF6の全キャラ共通のコンボダメージ計算エンジン",
+  "main": "damage-calc.ts",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types --test",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  }
+}
