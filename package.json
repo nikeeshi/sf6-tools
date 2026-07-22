@@ -1,0 +1,19 @@
+{
+  "name": "sf6-tools",
+  "version": "1.0.0",
+  "description": "SF6関連ツール群。整形はprettierに一任する",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.9.6"
+  }
+}
