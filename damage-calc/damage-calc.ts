@@ -18,7 +18,7 @@ export interface Multipliers {
   modern?: boolean;
   /** 持続: 発生技(コンボ始動)以降ずっと ×50% */
   justParry?: boolean;
-  /** 持続: 発生技以降ずっと ×80% */
+  /** 持続: 発生技以降ずっと ×80%。ガードで壁に張り付いた場合のみで、ヒットで張り付いたときはかからない */
   wallSplat?: boolean;
   /** ジェイミー専用。呼び出し側で計算済みの乗算値(%)をそのまま渡す */
   sake?: number;
@@ -108,7 +108,8 @@ export function calculateCombo(moves: MoveInput[]): ComboResult {
   moves.forEach((move, i) => {
     if (i > 0) {
       const prev = moves[i - 1];
-      const reduction = i - 1 === 0 ? (prev.starterScaling ?? 0) : (prev.comboScaling ?? 0);
+      const reduction =
+        i - 1 === 0 ? (prev.starterScaling ?? 0) : (prev.comboScaling ?? 0);
       scalingBase -= reduction;
     }
     scalingBase -= move.immediateScaling ?? 0;
