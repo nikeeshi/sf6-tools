@@ -11,73 +11,7 @@ SF6全キャラの技データ(ダメージ・補正値・フレーム等)をJSO
 
 ## スキーマ(暫定)
 
-```typescript
-type Confidence = 1 | 2 | 3 | 4 | 5;
-
-interface RatedValue<T> {
-  value: T;
-  confidence: Confidence;
-  source: string;
-}
-type Rated<T> = RatedValue<T> | null;
-
-type AttackLevel = "上段" | "中段" | "下段" | "投げ";
-type HitOutcome = "hit" | "whiff" | "block";
-type HitStrength = "normal" | "counter" | "punishCounter";
-
-interface FrameRange {
-  from: number;
-  to: number;
-}
-
-// 1つの攻撃判定。発生+持続をまとめて範囲で表現。多段技はこれが複数並ぶ想定
-interface Hit {
-  range: Rated<FrameRange>;
-  baseDamage: Rated<number>;
-  attackLevel: Rated<AttackLevel>;
-}
-
-interface DerivesInto {
-  input: string;              // 派生に必要な入力
-  window: Rated<FrameRange>;  // 派生可能なタイミング
-  moveId: string;
-}
-
-interface Move {
-  id: string;                 // "キャラ.技slug" の一意キー
-  name: string;
-  category: string;
-  notation: string;
-
-  hits: Hit[];                 // 単発技も要素数1として持つ。ダメージが出ない技は空配列
-
-  starterScaling: Rated<number>;
-  comboScaling: Rated<number>;
-  immediateScaling: Rated<number>;
-  minGuarantee: Rated<number>;
-
-  // 技自体の硬直。hit/whiff/blockで変わる技だけ埋める
-  recovery: { hit: Rated<number>; block: Rated<number>; whiff: Rated<number> } | null;
-
-  // 相手の地上ヒット時の硬直。normal/counter/punishCounterを独立値で持つ
-  hitstun: { normal: Rated<number>; counter: Rated<number>; punishCounter: Rated<number> } | null;
-
-  blockstun: Rated<number> | null;
-
-  cancelWindow: Rated<FrameRange> | null;
-  cancelRushWindow: Rated<FrameRange> | null;
-
-  derivesFrom: string | null;   // 派生元のid(子側)
-  derivesInto: DerivesInto[];   // 派生先の一覧(親側)
-
-  notes: string[];              // 構造化してない属性(無敵時間・強制ジャグル等)の自由記述
-}
-
-interface CharacterMoveDb {
-  character: string;
-  moves: Move[];
-}
-```
+定義は [schema.ts](schema.ts) にある。
 
 - `baseDamage` / `starterScaling` / `comboScaling` / `immediateScaling` / `minGuarantee` は
   [damage-calc](../damage-calc/damage-calc.ts) の `MoveInput` にそのまま渡せる形にする
@@ -85,13 +19,13 @@ interface CharacterMoveDb {
 
 ## 信頼度スケール(仮、未確認)
 
-| 値 | 意味 |
-|---|---|
-| 5 | ゲーム内実測 |
-| 4 | 公式サイトのフレーム表 |
-| 3 | コミュニティのフレームデータサイト/wiki、または一般則からの推測(例: カウンター=通常+2F) |
-| 2 | 動画等からの目算・推測 |
-| 1 | 未確認・暫定値 |
+| 値  | 意味                                                                                    |
+| --- | --------------------------------------------------------------------------------------- |
+| 5   | ゲーム内実測                                                                            |
+| 4   | 公式サイトのフレーム表                                                                  |
+| 3   | コミュニティのフレームデータサイト/wiki、または一般則からの推測(例: カウンター=通常+2F) |
+| 2   | 動画等からの目算・推測                                                                  |
+| 1   | 未確認・暫定値                                                                          |
 
 5と4はユーザー指定。1〜3は提案時点で未確認なので、使う前に本人確認を取ること。
 

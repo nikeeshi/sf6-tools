@@ -7,7 +7,8 @@ export interface RatedValue<T> {
 }
 export type Rated<T> = RatedValue<T> | null;
 
-export type AttackLevel = "上段" | "中段" | "下段" | "投げ";
+// 公式フレーム表の「属性」(英語版では Properties)列。値は日本語版のセル表記に合わせる
+export type AttackProperty = "上" | "中" | "下" | "投" | "弾" | "空弾";
 export type HitOutcome = "hit" | "whiff" | "block";
 export type HitStrength = "normal" | "counter" | "punishCounter";
 
@@ -20,7 +21,7 @@ export interface FrameRange {
 export interface Hit {
   range: Rated<FrameRange>;
   baseDamage: Rated<number>;
-  attackLevel: Rated<AttackLevel>;
+  properties: Rated<AttackProperty[]>; // 「上・弾」のように複数付く。攻撃判定を持たない技は []
 }
 
 export interface DerivesInto {
@@ -64,7 +65,7 @@ export interface Move {
   derivesFrom: string | null; // 派生元のid(子側)
   derivesInto: DerivesInto[]; // 派生先の一覧(親側)
 
-  notes: string[]; // 構造化してない属性(無敵時間・強制ジャグル等)の自由記述
+  notes: string[]; // 構造化していない情報(無敵時間・強制ジャグル等)の自由記述
 }
 
 export interface CharacterMoveDb {
