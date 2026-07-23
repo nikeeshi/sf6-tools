@@ -69,6 +69,16 @@ const ICON_TOKENS: Record<string, string> = {
   "key-dl": "↙",
   "key-dr": "↘",
   "key-nutral": "N", // 公式のファイル名がneutralではなくnutral
+  // 溜め(charge)。末尾のcが溜めを表す
+  "key-uc": "↑溜め",
+  "key-dc": "↓溜め",
+  "key-lc": "←溜め",
+  "key-rc": "→溜め",
+  "key-ulc": "↖溜め",
+  "key-urc": "↗溜め",
+  "key-dlc": "↙溜め",
+  "key-drc": "↘溜め",
+  "key-circle": "一回転", // スクリューパイルドライバー等のレバー一回転
   "key-plus": "+",
   "key-or": "or",
   arrow_3: "⇒", // 派生を表す矢印。レバーの→と紛らわしいので別の字にする
