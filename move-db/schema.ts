@@ -11,9 +11,9 @@ export interface FrameRange {
 
 // 1つの攻撃判定。発生+持続をまとめて範囲で表現。多段技はこれが複数並ぶ想定
 export interface Hit {
-  range: FrameRange;
-  baseDamage: number;
-  properties: AttackProperty[]; // 「上・弾」のように複数付くことがある。
+  range?: FrameRange;
+  baseDamage?: number;
+  properties?: AttackProperty[]; // 「上・弾」のように複数付くことがある。
 }
 
 export interface DerivesInto {
@@ -40,19 +40,20 @@ export interface Move {
   totalDamage?: number;
   startUp?: number;
   active?: number;
-  recoveryTotal: number; // 全体フレーム
-  advantageOnBlock: number;
-  advantageOnHit: number;
-  overAllProperties: AttackProperty; // フレーム表記載の属性。
+  totalFrame?: number;
+  landingRecovery?: number | null; // 空中技の着地隙。空中技でない場合はnull
+  advantageOnBlock?: number;
+  advantageOnHit?: number | "D";
+  overAllProperties: AttackProperty[] | null; // フレーム表記載の属性。属性が変化する多段技はnullでhitsのpropertiesを使う。
 
-  hits: Hit[]; // 単発技も要素数1として持つ。ダメージが出ない技は空配列
-  scaling?: Scaling; // 攻撃がない技は書かない。一つの技に複数の補正がある場合がでてきたらスキーマを修正する。
+  hits?: Hit[]; // 単発技も要素数1として持つ。ダメージが出ない技は空配列
+  scaling?: Scaling; // 攻撃がない技は書かない。一つの技に複数の補正がある場合がでてきたらスキーマを修正する。（キャミィのスイングコンビネーションとケンの龍尾は今は例外としここを埋めずにnotesに書く。）
 
   // 技自体の硬直。hit/whiff/blockで変わる技だけ埋める
   recovery: {
     hit: number;
-    block: number;
-    whiff: number;
+    block?: number;
+    whiff?: number;
   } | null;
 
   // 相手の地上ヒット時の硬直。
@@ -77,6 +78,11 @@ export interface Move {
   airborneFrames: FrameRange[] | null; // 空中
   superArmorFrames: (FrameRange & { counts: number })[] | null; // アーマー
   absorbFrames: (FrameRange & { properties: InvincibleProperty[] })[] | null; // 当て身
+
+  totalDGainOnHit?: number; //Dゲージ増加(ヒット時、攻撃側)
+  totalDReductionOnBlock?: number; //Dゲージ減少(ガード時、防御側)
+  totalDReductionOnPunishCounter?: number; //Dゲージ減少(パニッシュカウンター時、防御側)
+  totalSAGain?: number; //SAゲージ増加
   notes: string[]; // 構造化していない情報(無敵時間・強制ジャグル等)の自由記述
 }
 
