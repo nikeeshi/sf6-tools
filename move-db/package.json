@@ -1,0 +1,15 @@
+{
+  "name": "move-db",
+  "version": "1.0.0",
+  "description": "SF6のキャラ別技データ(damage-calcのMoveInputに渡すためのJSON)",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  }
+}
