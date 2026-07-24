@@ -14,6 +14,7 @@ export interface Hit {
   range?: FrameRange;
   baseDamage?: number;
   properties?: AttackProperty[]; // 「上・弾」のように複数付くことがある。
+  guage?: Guage;
 }
 
 export interface DerivesInto {
@@ -22,18 +23,24 @@ export interface DerivesInto {
   moveId: string;
 }
 export interface Scaling {
-  starterScaling: number; // 始動補正
-  comboScaling: number; // コンボ補正
-  immediateScaling: number; // 即時補正
-  minGuarantee: number; // 最低保証
-  SA3CancelImmediateScaling: number; // 必殺技キャンセル時のみ即時補正
+  starterScaling?: number; // 始動補正
+  comboScaling?: number; // コンボ補正
+  immediateScaling?: number; // 即時補正
+  minGuarantee?: number; // 最低保証
+  SA3CancelImmediateScaling?: number; // 必殺技キャンセル時のみ即時補正
+}
+export interface Guage {
+  dGainOnHit?: number; //Dゲージ増加(ヒット時、攻撃側)
+  dReductionOnBlock?: number; //Dゲージ減少(ガード時、防御側)
+  dReductionOnPunishCounter?: number; //Dゲージ減少(パニッシュカウンター時、防御側)
+  sAGain?: number; //SAゲージ増加
 }
 export interface Move {
   id: string; // "キャラ.技slug" の一意キー
   name: string;
-  category: string; // 通常技/特殊技/必殺技/SA/共通システム
+  category: string; // 通常技/特殊技/必殺技/SA/通常投げ/共通システム
   notation: string; // 入力表記。派生技の入力は最も一般的な派生元のnotationに加えて派生入力を付与したもの。
-  condition: string | null; // nullは常時使用可能な技。空中: 空中で使用可能な技。その他は派生元と条件を書く。
+  condition: string | null; // フレーム表の条件(先頭カッコ書き)をそのまま保持。nullは常時使用可能。投げの「近距離で」は無視してnull(例外: 距離で技が変わるザンギエフ半回転等は保持)。
   derivesFrom?: string | null; // 派生元のid(子側)
 
   hitCount?: number;
@@ -67,7 +74,7 @@ export interface Move {
     | null;
 
   blockstun: number | null;
-  cancelableBy?: string | null; // SP/SA/SA2/SA3
+  cancelableBy?: string | null; // フレーム表のキャンセル欄をそのまま。C=必殺技キャンセル可(実際は必殺技/CR/SA系へ)、SA/SA2/SA3=そのレベル以上のSAへキャンセル可
   cancelWindow?: FrameRange | null;
   cancelRushWindow?: FrameRange | null; // cancelWindowと違う場合non-null
 
@@ -79,10 +86,8 @@ export interface Move {
   superArmorFrames: (FrameRange & { counts: number })[] | null; // アーマー
   absorbFrames: (FrameRange & { properties: InvincibleProperty[] })[] | null; // 当て身
 
-  totalDGainOnHit?: number; //Dゲージ増加(ヒット時、攻撃側)
-  totalDReductionOnBlock?: number; //Dゲージ減少(ガード時、防御側)
-  totalDReductionOnPunishCounter?: number; //Dゲージ減少(パニッシュカウンター時、防御側)
-  totalSAGain?: number; //SAゲージ増加
+  guage: Guage;
+
   notes: string[]; // 構造化していない情報(無敵時間・強制ジャグル等)の自由記述
 }
 

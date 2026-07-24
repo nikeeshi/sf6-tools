@@ -8,5 +8,5 @@
     "allowImportingTsExtensions": true,
     "types": ["node"]
   },
-  "include": ["*.ts", "tools/*.ts"]
+  "include": ["*.ts", "moves/*.ts", "tools/*.ts"]
 }
