@@ -14,7 +14,7 @@ export interface Hit {
   range?: FrameRange;
   baseDamage?: number;
   properties?: AttackProperty[]; // 「上・弾」のように複数付くことがある。
-  guage?: Guage;
+  guage?: Guage; // 段ごとゲージ(例外用)。基本は Move.guage にトータルで入れる
 }
 
 export interface DerivesInto {

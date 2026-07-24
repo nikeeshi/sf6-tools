@@ -1334,13 +1334,13 @@ export const luke = {
       absorbFrames: null,
       guage: {
         dGainOnHit: 0,
-        dReductionOnBlock: -4000,
-        dReductionOnPunishCounter: -3000,
-        sAGain: 500,
+        dReductionOnBlock: -4000, // 2段目はヒット時のみなのでガードは1段目分
+        dReductionOnPunishCounter: -6000, // 2ヒット分(-3000 x2)
+        sAGain: 850, // 2ヒット合計(500+350)
       },
       notes: [
         "2ヒット技。補正が進まないため1技として扱う",
-        "2段目はヒット時のみ発生: 発生33(持続33-36)/硬直16/ヒット硬直差D/ダメージ400/SA増加350",
+        "2段目はヒット時のみ発生: 発生33(持続33-36)/硬直16/ヒット硬直差D/ダメージ400",
         "初段ヒット時のみDDTへ派生可",
       ],
     },
