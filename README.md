@@ -8,6 +8,7 @@
 - [combo-tree](combo-tree/README.md) — コンボルートを木構造で管理する自分用ツール
 - [damage-calc](damage-calc/README.md) — 全キャラ共通のコンボダメージ計算エンジン(TypeScriptライブラリ)
 - [move-db](move-db/README.md) — 全キャラの技データベース(JSON)
+- [combo-count](combo-count/README.md) — コンボカウント(始動値/加算値/上限値)の実測記録
 
 ## このプロジェクトについて
 
