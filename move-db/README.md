@@ -14,6 +14,12 @@ SF6全キャラの技データ(ダメージ・補正値・フレーム等)を持
 (`derivesFrom`/`derivesInto`)+ 無敵/空中/アーマーの構造化まで完了。残りは実機調査待ちの
 項目(`hitstun`/`blockstun`/`hitCount`確定値/多段`hits`)と`notes`整理。他29キャラは未着手。
 
+## 実測値(`measured/`)
+
+公式フレーム表に無い実機調査の結果を、キャラ別に `measured/<char>.md` に置く。`moves/<char>.ts` は `tools/tsv-to-ts.ts` で生成されるもので、再生成すれば手編集が消える。**測り直しの効かない実測値は `moves/` に直接書かず `measured/` に独立して置く**。
+
+- [measured/ingrid.md](measured/ingrid.md) — 最低空硬直差(ドライブインパクトのパニッシュカウンターの空中判定部分に当てたときの硬直差)
+
 ## スキーマ(暫定)
 
 定義は [schema.ts](schema.ts) にある。
