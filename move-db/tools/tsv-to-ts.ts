@@ -1,7 +1,7 @@
 // raw-frame-tsv/<char>.tsv を、schema.ts の CharacterMoveDb 形に機械変換する。
 //
 // 使い方:
-//   node --experimental-strip-types tools/tsv-to-ts.ts raw-frame-tsv/luke.tsv > moves/luke.ts
+//   node --experimental-strip-types tools/tsv-to-ts.ts raw-frame-tsv/20260528/luke.tsv > moves/20260528/luke.ts
 //
 // このスクリプトは「機械的に確定できる項目」だけを埋める。判断が要る項目
 // (id・派生・多段のhits・実機調査項目・例外)は null / placeholder で残し、
@@ -312,7 +312,7 @@ const rows: Row[] = bodyLines.map((line) => {
 const characterName = rows[0]?.["キャラ"] ?? charKey;
 const moves = rows.map((row, i) => serializeMove(row, i + 2)); // +2: TSVの行番号(ヘッダー=1)に合わせる
 
-const out = `import type { CharacterMoveDb } from "../schema.ts";
+const out = `import type { CharacterMoveDb } from "../../schema.ts";
 
 // このファイルは tools/tsv-to-ts.ts で raw-frame-tsv/${basename(tsvPath)} から機械生成した
 // 一次データ(moves/ 配下に置く)。TODO を手作業パスで潰していく。

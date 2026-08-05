@@ -1,8 +1,8 @@
 // 公式サイトのフレーム表HTMLを、加工しやすいTSV/CSVに落とすパーサー。
 //
 // 使い方:
-//   node --experimental-strip-types tools/parse-frame-html.ts raw-frame-html/luke.html > raw-frame-tsv/luke.tsv
-//   node --experimental-strip-types tools/parse-frame-html.ts raw-frame-html/luke.html --csv
+//   node --experimental-strip-types tools/parse-frame-html.ts raw-frame-html/20260528/luke.html > raw-frame-tsv/20260528/luke.tsv
+//   node --experimental-strip-types tools/parse-frame-html.ts raw-frame-html/20260528/luke.html --csv
 //
 // 入力は https://www.streetfighter.com/6/character/<name>/frame をブラウザで開き、
 // DevToolsで<html>のouterHTMLを保存したもの(JS描画後のDOM)。

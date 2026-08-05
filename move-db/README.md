@@ -2,21 +2,27 @@
 
 SF6全キャラの技データ(ダメージ・補正値・フレーム等)を持つデータベース。
 [damage-calc](../damage-calc/README.md) が毎回技データを聞き直さずに済むようにするのが目的。
-各キャラのデータは `moves/<char>.ts` に `satisfies CharacterMoveDb` 付きで置く(TSにすることで
+各キャラのデータは `moves/<yyyymmdd>/<char>.ts` に `satisfies CharacterMoveDb` 付きで置く(TSにすることで
 [schema.ts](schema.ts) に対する型検査が効く)。
 
-## 現状(2026-07-24時点)
+進捗・タスクは [TASKS.md](TASKS.md) で管理する(このREADMEは仕様・リファレンスに専念)。
 
-全30キャラの公式フレーム表をTSVに落とし済み(`raw-frame-tsv/`、2361技)。ここから
-`tools/tsv-to-ts.ts` で機械変換し、手作業パスで TODO を潰していく方針。
+## ディレクトリ構成(版管理)
 
-**ルーク([moves/luke.ts](moves/luke.ts))が1体目**。機械パス + id付与 + 派生関係
-(`derivesFrom`/`derivesInto`)+ 無敵/空中/アーマーの構造化まで完了。残りは実機調査待ちの
-項目(`hitstun`/`blockstun`/`hitCount`確定値/多段`hits`)と`notes`整理。他29キャラは未着手。
+キャラ別データを持つ `moves/`・`raw-frame-html/`・`raw-frame-tsv/` は、直下に更新日
+`<yyyymmdd>/` の版サブディレクトリを挟む(例: `moves/20260528/luke.ts`)。yyyymmdd はその内容が
+対応するゲームアップデートの日付。あるキャラの「日付 X 時点のデータ」は、**X 以下で最も新しい
+版フォルダ**を辿って解決する(調整の入らなかったキャラは古い版のまま据え置く)。
+
+`measured/`(実機実測)と機構ファイル(`schema.ts`・`characterList.ts`・`tools/`・`tsconfig.json`)は
+版を切らずルート直下に置く。`measured/` の測定日は各ドキュメント内に書く。
+
+- `20260528` — 既存30キャラ分のフレーム表(ルークのみ TS 化済み)
+- `20260803` — ヤスミン追加(取り込み待ち)
 
 ## 実測値(`measured/`)
 
-公式フレーム表に無い実機調査の結果を、キャラ別に `measured/<char>.md` に置く。`moves/<char>.ts` は `tools/tsv-to-ts.ts` で生成されるもので、再生成すれば手編集が消える。**測り直しの効かない実測値は `moves/` に直接書かず `measured/` に独立して置く**。
+公式フレーム表に無い実機調査の結果を、キャラ別に `measured/<char>.md` に置く。`moves/<yyyymmdd>/<char>.ts` は `tools/tsv-to-ts.ts` で生成されるもので、再生成すれば手編集が消える。**測り直しの効かない実測値は `moves/` に直接書かず `measured/` に独立して置く**。
 
 - [measured/ingrid.md](measured/ingrid.md) — 最低空硬直差(ドライブインパクトのパニッシュカウンターの空中判定部分に当てたときの硬直差)
 
@@ -31,7 +37,7 @@ SF6全キャラの技データ(ダメージ・補正値・フレーム等)を持
 ## TSVからTSへ移すときの方針
 
 ```bash
-node --experimental-strip-types tools/tsv-to-ts.ts raw-frame-tsv/luke.tsv > moves/luke.ts
+node --experimental-strip-types tools/tsv-to-ts.ts raw-frame-tsv/20260528/luke.tsv > moves/20260528/luke.ts
 ```
 
 生成後は `moves/<char>.ts` を手作業パスで直接編集する(以降スクリプトの再生成はしない。
@@ -91,8 +97,8 @@ node --experimental-strip-types tools/tsv-to-ts.ts raw-frame-tsv/luke.tsv > move
 [tools/parse-frame-html.ts](tools/parse-frame-html.ts) にある。
 
 ```bash
-node --experimental-strip-types tools/parse-frame-html.ts raw-frame-html/luke.html > raw-frame-tsv/luke.tsv
-node --experimental-strip-types tools/parse-frame-html.ts raw-frame-html/luke.html --csv
+node --experimental-strip-types tools/parse-frame-html.ts raw-frame-html/20260528/luke.html > raw-frame-tsv/20260528/luke.tsv
+node --experimental-strip-types tools/parse-frame-html.ts raw-frame-html/20260528/luke.html --csv
 ```
 
 入力のHTMLは`raw-frame-html/`に、出力のTSVは`raw-frame-tsv/`に置く。公式サイトはSPAでフレーム表がJS描画のため、
@@ -124,10 +130,8 @@ URLを直接fetchしても表は取れない。ブラウザで
 
 ## 対象キャラ
 
-全キャラ。データ量が多いのでキャラ単位で区切って進める想定。
-
-TSVは全30キャラ分ある。ヤスミンのみ配信前でフレーム表が存在しないため対象外。
-TS化はルークが着手済み(実機項目を除き完了)、他29キャラは未着手。
+全キャラ対象。データ量が多いのでキャラ単位で区切って進める。`20260528` 版に既存30キャラの
+フレーム表があり、ヤスミン(`20260803`)は取り込み待ち。個々の進捗は [TASKS.md](TASKS.md) を参照。
 
 ## 保留事項
 

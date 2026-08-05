@@ -1,4 +1,4 @@
-import type { CharacterMoveDb } from "../schema.ts";
+import type { CharacterMoveDb } from "../../schema.ts";
 
 // このファイルは tools/tsv-to-ts.ts で raw-frame-tsv/luke.tsv から機械生成した
 // 一次データ。TODO を手作業パスで潰していく。
