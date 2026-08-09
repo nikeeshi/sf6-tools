@@ -35,18 +35,37 @@ Liquipedia の参加者表(`chars=` 欄)から抽出。**「その大会でエ�
 | MysticSmash | 2025 / 2026 |                                         |
 | Magnegro    | 2025 / 2026 |                                         |
 | KEI.B       | 2025        |                                         |
-| ElChakotay  | 2026        | **リリーにも通しで出てくる**            |
+| ElChakotay  | 2026        | **リリー・イングリッドにも出る**        |
+| **Kosaku**  | 2026        | TOPANGA 第7期 予選決勝。**VARREL 所属** |
 | Linkexelo   | 2026        |                                         |
 | Johnny      | 2026        |                                         |
 | wildfree    | 2026        |                                         |
 | tuffgnarl   | 2026        |                                         |
 
-**sako は対象3キャラのうち2キャラ(エレナ・イングリッド)に関わる**ので、追うと効率がいい。
-発信先は Liquipedia の選手ページから取得済み — X `sakonoko` / Twitch `sakonoko_game`(FAV gaming)。
-Dogura は X `maneater_dgr` / Twitch `cyclops_dogura` / YouTube `@ikoma_dogura`。
+**Kosaku(コサク)は最初の抽出で取りこぼしていた。** TOPANGA 第7期の Open Qualifier/Finals という
+下位ページにいたため、キャラ名検索に引っかからなかった。**Liquipedia は予選ページまで見ないと漏れる。**
+
+### 発信先
+
+| 発信者         | X              | Twitch           | YouTube           | 所属・備考                       |
+| -------------- | -------------- | ---------------- | ----------------- | -------------------------------- |
+| **Kosaku**     | 未確認         | 未確認           | 未確認            | **VARREL 所属・役割は Streamer** |
+| **Dogura**     | `maneater_dgr` | `cyclops_dogura` | `@ikoma_dogura`   | Crazy Raccoon。**Discord あり**  |
+| **sako**       | `sakonoko`     | `sakonoko_game`  | `c/sakonoko_game` | FAV gaming                       |
+| **ElChakotay** | `ElChakotay`   | `ElChakotay`     | `user/Chakotay17` | 対象3キャラを継続的に扱う        |
+
+**Kosaku は VARREL に「Streamer」という役割で所属している**(2024-04-01〜、本名 Kazuki Kosaku)。
+選手枠ではなく**発信が本業**という位置づけなので、エレナの情報源としての期待値が高い。発信先は未確認。
 
 **sako は職人タイプ。** スト5ではメナトという操作難度の非常に高いキャラを使っていた人で、操作精度が高い。
-イングリッドを単騎で持ち込んでいるのも同じ性質と見てよさそう。**「強くて、かつ探索型」**の例。
+イングリッドを単騎で持ち込んでいるのも同じ性質。**ただし 2026-08-04 に「配信ずっと休んでてすみません。
+今月中に再開できそう」と投稿しており、現在は配信休止中。** X も告知・チーム関連が中心で、攻略発信ではない。
+
+**Dogura は Discord サーバーを持っている**(X の配信リンク先に記載)。README の経路4(強い人の周りから
+探索型を拾う)の実体として使える可能性がある。ただし SF6 専業ではなく、格ゲー全般＋他ジャンルも扱う。
+
+**ElChakotay は 2026-08-05 に「Season 4 Patch | Lily, Ingrid & Elena」を出している** — 対象3キャラを
+1本で扱う人。詳細は [lily.md](lily.md)。
 
 ## MR 上位プレイヤー(モダン) — 参考程度
 
@@ -81,7 +100,11 @@ Cエレナを追う目的にはほぼ使えない。**エレナはクラシッ�
 
 ## 次にやること
 
-1. 情報源をまだ1つも調べていない。**モダン集計に頼れない**ことを踏まえて大会経路とコミュニティに寄せる
-2. **sako の X(`sakonoko`)と Twitch(`sakonoko_game`)を見る。** 対象3キャラのうち2キャラに関わる最優先の人
-3. かくぶろにエレナのセットプレイ記事があるか確認する
-4. 受け側(相手からエレナがどう対策されているか)の資料を探す
+1. **Kosaku(コサク)の発信先を特定する。** VARREL に Streamer として所属しているエレナ使い。
+   **発信が本業の人**なので期待値が高いが、X・YouTube・Twitch のどれも未特定
+2. **ElChakotay の 2026-08-05「Season 4 Patch | Lily, Ingrid & Elena」を見る。** 対象3キャラを1本で扱う
+3. Dogura の Discord がコミュニティのハブとして使えるか見る(経路4)
+4. 文章の情報源をまだ1つも調べていない。かくぶろにエレナのセットプレイ記事があるか確認する
+5. 受け側(相手からエレナがどう対策されているか)の資料を探す
+
+**sako は当面は当てにしない。** 2026-08-04 時点で配信休止中。再開したら見る。
