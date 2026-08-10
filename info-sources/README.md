@@ -248,7 +248,8 @@ Liquipedia のチームページから役割付きで引ける([common.md](commo
 キャラ一覧の正は [`move-db/characterList.ts`](../move-db/characterList.ts)。
 
 - [common.md](common.md) — キャラ非依存の情報源。**冒頭にルーティングテーブル**(問い → 見る先)
-- [characters.md](characters.md) — **全31キャラの情報源マップ。** キャラを掘る前にまずここ
+- [characters.md](characters.md) — **全31キャラの情報源マップ。** キャラを掘る前にまずここ(キャラ → 人)
+- [players.md](players.md) — **プレイヤー名鑑。** 使用キャラ・拠点・X ハンドル(人 → 発信先)
 - [ingrid.md](ingrid.md) — イングリッド
 - [lily.md](lily.md) — リリー。**情報源は着手したところ**
 - [elena.md](elena.md) — エレナ。**情報源は着手したところ**
