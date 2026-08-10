@@ -278,6 +278,7 @@ Liquipedia のチームページから役割付きで引ける([common.md](commo
 - [elena.md](elena.md) — エレナ。**情報源は着手したところ**
 
 残タスクとセッションをまたぐ引き継ぎは [TASKS.md](TASKS.md)。
+**そこに至った経緯と失敗の記録は [LOG.md](LOG.md)**(TASKS を軽く保つために分けてある)。
 
 ## 言語
 
