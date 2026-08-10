@@ -47,12 +47,12 @@ Liquipedia の参加者表(`chars=` 欄)から抽出。**「その大会でエ�
 
 ### 発信先
 
-| 発信者         | X              | Twitch           | YouTube           | 所属・備考                       |
-| -------------- | -------------- | ---------------- | ----------------- | -------------------------------- |
-| **Kosaku**     | 未確認         | 未確認           | 未確認            | **VARREL 所属・役割は Streamer** |
-| **Dogura**     | `maneater_dgr` | `cyclops_dogura` | `@ikoma_dogura`   | Crazy Raccoon。**Discord あり**  |
-| **sako**       | `sakonoko`     | `sakonoko_game`  | `c/sakonoko_game` | FAV gaming                       |
-| **ElChakotay** | `ElChakotay`   | `ElChakotay`     | `user/Chakotay17` | 対象3キャラを継続的に扱う        |
+| 発信者         | X              | Twitch           | YouTube           | 所属・備考                         |
+| -------------- | -------------- | ---------------- | ----------------- | ---------------------------------- |
+| **Kosaku**     | 未確認         | 未確認           | 未確認            | **VARREL 所属・役割は Streamer**   |
+| **Dogura**     | `maneater_dgr` | `cyclops_dogura` | `@ikoma_dogura`   | Crazy Raccoon。**Discord あり**    |
+| **sako**       | `sakonoko`     | `sakonoko_game`  | `c/sakonoko_game` | FAV gaming                         |
+| **ElChakotay** | `ElChakotay`   | `ElChakotay`     | `user/Chakotay17` | リリー・イングリッド・エレナを扱う |
 
 **Kosaku は VARREL に「Streamer」という役割で所属している**(2024-04-01〜、本名 Kazuki Kosaku)。
 選手枠ではなく**発信が本業**という位置づけなので、エレナの情報源としての期待値が高い。発信先は未確認。
@@ -64,13 +64,12 @@ Liquipedia の参加者表(`chars=` 欄)から抽出。**「その大会でエ�
 **Dogura は Discord サーバーを持っている**(X の配信リンク先に記載)。README の経路4(強い人の周りから
 探索型を拾う)の実体として使える可能性がある。ただし SF6 専業ではなく、格ゲー全般＋他ジャンルも扱う。
 
-**ElChakotay は 2026-08-05 に「Season 4 Patch | Lily, Ingrid & Elena」を出している** — 対象3キャラを
-1本で扱う人。詳細は [lily.md](lily.md)。
+**ElChakotay は 2026-08-05 に「Season 4 Patch | Lily, Ingrid & Elena」を出している** — この3人を1本で扱う人。詳細は [lily.md](lily.md)。
 
 ## MR 上位プレイヤー(モダン) — 参考程度
 
 madaraomi の Act.12 まとめ([common.md](common.md))より。**上位60人中モダンは3人しかいない**ので、
-Cエレナを追う目的にはほぼ使えない。**エレナはクラシックが主流**という事実の裏付けとして置いておく。
+エレナ使いを追う目的にはほぼ使えない。**エレナはクラシックが主流**という事実の裏付けとして置いておく。
 
 | MR   | CFN 名     | ユーザコード | このリスト内の他キャラ |
 | ---- | ---------- | ------------ | ---------------------- |
@@ -102,7 +101,7 @@ Cエレナを追う目的にはほぼ使えない。**エレナはクラシッ�
 
 1. **Kosaku(コサク)の発信先を特定する。** VARREL に Streamer として所属しているエレナ使い。
    **発信が本業の人**なので期待値が高いが、X・YouTube・Twitch のどれも未特定
-2. **ElChakotay の 2026-08-05「Season 4 Patch | Lily, Ingrid & Elena」を見る。** 対象3キャラを1本で扱う
+2. **ElChakotay の 2026-08-05「Season 4 Patch | Lily, Ingrid & Elena」を見る。** リリー・イングリッド・エレナを1本で扱う
 3. Dogura の Discord がコミュニティのハブとして使えるか見る(経路4)
 4. 文章の情報源をまだ1つも調べていない。かくぶろにエレナのセットプレイ記事があるか確認する
 5. 受け側(相手からエレナがどう対策されているか)の資料を探す
