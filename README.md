@@ -9,6 +9,7 @@
 - [damage-calc](damage-calc/README.md) — 全キャラ共通のコンボダメージ計算エンジン(TypeScriptライブラリ)
 - [move-db](move-db/README.md) — 全キャラの技データベース(JSON)
 - [combo-count](combo-count/README.md) — コンボカウント(始動値/加算値/上限値)の実測記録
+- [info-sources](info-sources/README.md) — 攻略情報の情報源の索引(キャラ別の発信者・サイト)
 
 ## このプロジェクトについて
 
