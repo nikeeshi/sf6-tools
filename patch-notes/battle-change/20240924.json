@@ -1,0 +1,1177 @@
+{
+  "title": "2024.09.24 update",
+  "title_bg": "",
+  "policy": [
+    {
+      "title": "全体コンセプト",
+      "text": "今回のアップデートでは一部のキャラクターにのみバランス調整を行っています。<br><br>全体的なキャラクターバランスを整えるものではなく、意図せぬ弱体化の緩和措置や、遊びの変化幅が少なかったキャラクターへの追加調整、突出しすぎた要素の弱体化が主な目的となります。"
+    },
+    {
+      "title": "luke",
+      "text": "全体調整において防御能力を抑える目的で通常技のリーチを短くしましたが、攻撃面への影響も想定より大きく、攻撃が届かない場面が多くなってしまった為、通常技のノックバックを縮小することで連係面の弱体化を緩和しました。<br><br>トリプルインパクト（弱P＞中P＞強P）は始動補正増加の影響が大きい点と、ルークの全体的な攻撃力低下を鑑みて、パラメーターの補強を行っています。<br><br>アウトローキック(←+強K)の調整はコンボ難易度の緩和が目的となります。<br>ヒットバック増加の影響により、ドライブラッシュからの発動が最速でないと追撃が難しくなってしまっていたため、多少入力が遅れてしまっても追撃が届くように調整を行いました。"
+    },
+    {
+      "title": "kimberly",
+      "text": "細工手裏剣(↓↓+P)を使用したセットプレイはキンバリーの特徴的な攻めの一つですが、全体調整の影響が大きく、貴重なストックを消費する割に見返りが小さくなってしまっていたため、始動補正とコンボ補正を緩和して攻めが通った時のリターンを増やしました。"
+    },
+    {
+      "title": "jp",
+      "text": "JPは迎撃性能の高さを抑える調整をエド追加時、豪鬼追加時の二段階で行った結果、立ち回りが少し窮屈になりすぎてしまっていた為、しゃがみ強Pの対空性能を向上させました。<br>以前ほどではないものの、しっかりと反応できた場合に判定が強いジャンプ攻撃に対しても一方的に打ち勝てるような性能になっています。<br><br>また、ラヴーシュカ(SA2)の弱体化に伴って必要以上に削がれてしまっていたコンボルートを補填する目的で立ち中Kとヴィリーナ(→+強K)に調整を行っています。<br>以前よりも連続ヒットする技が増加しているため、新たなコンボ構築が可能です。<br><br>トリグラフ(↓↓+P)の調整は、ヴィリーナの調整に紐づくものです。<br>通常のコンボパーツとしてトリグラフからヴィリーナが連続ヒットしてしまうと、他の技の価値が下がってしまうため地上ヒット時のみ、吹き飛び時間を抑える調整を行いました。<br>ダウン時間もあわせて調整しているため、ヒット時の硬直差自体は変更ありません。"
+    },
+    {
+      "title": "deejay",
+      "text": "全体調整の際、強化要素が少なく内容も不十分であったため、追加の調整を行いました。<br><br>用途が狭かった3ビートコンボ（弱P＞中K＞中K）はヒット後の間合いが近くなり、打撃と投げの選択肢が取れるようになりました。<br>状況に応じてクイックローリングソバット(↓↘→+中K）と使い分けることで活用できるようになっています。<br>また、ジョスクール（↓↙←+K）後の選択肢に関して、比較的使用頻度の低いワニングムーン（↓↙←+K＞中K）の強化を行いました。<br>通常版はパニッシュカウンター時に追撃ができるようになっています。<br>ガード時のドライブゲージ削り量も増加しており、ファンキースライサー（↓↙←+K＞弱K）とは違った形で強みが出るようにしています。<br>OD版に関してはSAで追撃できるようになりました。<br>空中ヒット時の状況が良くなったグレイテストソバット（SA1）とあわせることで、まとまったダメージを取りつつ攻めを継続することが可能です。"
+    },
+    {
+      "title": "guile",
+      "text": "ソニックブーム(←溜め→+P)は立ち回りでの回転率の高さやループコンボの存在からゲージ周りの優位性が高くなりすぎていたため、SAゲージ増加量とドライブゲージ増加量を減少させる調整を行いました。<br>※中ソニックブームに関しては、他強度と比較した際に立ち回りでの制圧力が弱めであることを考慮して差別化を行っています。"
+    },
+    {
+      "title": "zangief",
+      "text": "全体調整によって様々な技性能を向上させた結果、過剰な性能になってしまっているところがあったため抑える調整を行いました。<br>ニーバット(→+中K)はガード時の硬直差を-3Fから-4Fに戻しています。<br>技の使い勝手をよくするために行った調整でしたが、全体的にパワーが向上した現在のザンギエフにとっては少し強力すぎる接近手段となってしまっていたため、ガード時の展開は悪くなるようにしました。<br>また、見た目とやられ判定の乖離が激しかったため、ある程度見た目に合わせるようにやられ判定を拡大しています。<br>※足元への攻撃は以前と同様に避けることが可能です<br><br>ヘッドバッド(→+強P)は攻めの継続性と崩し能力の高さを鑑みて、ヒット時のリターンを下げる調整を行いました。<br>コンボ自体は可能なままですが、補正の追加でダメージが下がっています。<br>一方でヒット時にしゃがみ中Pが繋がるようになっているので、SA2を使ったコンボ難易度が低下しています。"
+    },
+    {
+      "title": "dhalsim",
+      "text": "全体調整の際に変化が少なかったキャラクターのため、追加調整を行いました。<br><br>各技の使い勝手を向上させた他、戦術の幅が広がる要素としてSA1をガードさせた際に回復可能ダメージ※を与える効果を追加しました。<br>※時間経過で徐々に回復するダメージ。回復可能ダメージが残っている間に攻撃がヒットすると、実ダメージに変換されます。<br>ガード時のドライブゲージ削り量や状況も良くなっている為、ガードの上から無理矢理相手のリソースを減らしつつ、次に与える攻撃のプレッシャーを増やすことができるようになっています。"
+    },
+    {
+      "title": "rashid",
+      "text": "しゃがみ弱Pは他キャラクターと比べてやられ判定が小さく、対空技として機能しやすくなっていたため同等の高さに合わせる調整を行いました。<br>※空中技のみヒットするやられ判定なので、地上の技相性には影響はありません。<br>アサルトネイル(↓+SP＞→+攻撃＞→+攻撃)のコマンド変更は暴発を防ぐためのものとなります。<br>アサルトロール(↓+SP＞→+攻撃)から通常技を出そうとした際、入力が早すぎるとアサルトネイルが暴発してしまうため、前方向への入力がなければコマンドが成立しないようにしました。"
+    },
+    {
+      "title": "vega",
+      "text": "ベガは対処の難しい技の弱体化と、不具合修正が主な内容となります。<br><br>ダブルニープレス（↓↘→+K）はガード時に相手の方が先に動き出せる技ですが、ガード後の間合いが遠く、実質的にベガが有利といえるような状況が頻繁に発生していました。<br>対処の仕方がわかりづらく、一方的に攻撃を押し付けられる状況がループしやすくなってしまっていたため、ガードバックを縮小して同じ間合いを維持し続けることが難しくなるようにしました。<br>あわせて硬直部分のやられ判定を小さくしているため、確定反撃の受けやすさには変化はありませんが、リーチの長い攻撃が届きやすくなっており、ターンの切り替わりが起きやすくなっています。<br><br>ドライブリバーサルはベガがほとんど移動しないにも関わらずリーチが非常に長く、状況によっては反撃が非常に難しくなってしまっていたため、攻撃判定を縮小しています。"
+    },
+    {
+      "title": "ed",
+      "text": "全体調整においてほぼ変化がなかった為、僅かに調整を行っていますが、キャラクターの魅力や強さは十分発揮されているため、少し使いづらかった点を補強するというような調整が主となっています。<br>弱サイコフリッカー（↓↘→+弱K）はヒット後の操作難易度緩和のための調整となっており、追撃内容に変化はありません。<br><br>また、サイコキャノン(SA2)を用いたコンボのSAゲージ増加量には弱体化を行っています。<br>無敵時間を持たないSA2の中では使い道が若干少ない点を考慮してゲージ増加量には補正を入れていませんでしたが、コンボ面での伸びが著しく、難易度の高さを加味してもリターンが高くなりすぎてしまっているため、SAゲージ増加量に補正を追加しました。"
+    },
+    {
+      "title": "chunli",
+      "text": "強天昇脚(↓↓+強K)が初段のみヒットした場合に大幅に不利な状況になってしまっていた為、相手のダウン時間を増やして反撃が確定しないようにしました。"
+    }
+  ],
+  "common": [
+    {
+      "title": "ドライブインパクト",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "①一部キャラクターのガード待機判定が攻撃判定と同等の長さになっていなかったので、攻撃判定に合わせる形でガード待機判定を修正しました。対象キャラクターは下記になります。<br><br>対象キャラクター：ルーク・キンバリー・春麗・キャミィ・ディージェイ・A.K.I.<br><br>②一部キャラクターが相手の攻撃を受け止めた際に、意図せず性能が変化していた不具合を修正しました。対象キャラクターと修正内容は下記になります。<br><br>キンバリー：1～17F間のガード待機判定が消失していた不具合を修正しました。<br>ディージェイ：通常版より攻撃判定が短くなっていた不具合を修正しました。<br>ブランカ：ガード待機判定が短くなり、攻撃持続2F目のリーチが長くなっていた不具合を修正しました。"
+        }
+      ]
+    },
+    {
+      "title": "ドライブリバーサル",
+      "body": [
+        {
+          "category": "調整",
+          "text": "投げられ判定を前方に拡大し、近距離でガードされた際に通常投げが反撃として届くようにしました。"
+        }
+      ]
+    },
+    {
+      "title": "ジャストパリィ",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "特定の技をジャストパリィして暗転演出が入った際に、暗転演出無しの場合と同様の硬直がジャストパリィを行った側に付与されていた不具合を修正しました。<br>該当の技は以下の通りです。<br><br>■ラシード<br>アラビアン・サイクロン（2段目以降）<br><br>■JP<br>ストリボーグ（2段目以降）"
+        }
+      ]
+    },
+    {
+      "title": "暗転中の必殺技発動（モダン操作）",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "SA等の暗転中に手動操作で技を入力した際に、簡易入力時の補正がかかってしまうことがある不具合を修正しました。"
+        }
+      ]
+    },
+    {
+      "title": "アシストコンボ",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "一部キャラクターのアシストコンボ中にバーンアウトし、先行入力で再度同じアシストコンボの初段を発動した際にコンボの2段目以降が継続しなかった不具合を修正しました。<br>対象キャラクターと対象アシストコンボは下記になります。<br><br>・キンバリー<br>アシストコンボ2<br><br>・マノン<br>アシストコンボ2"
+        }
+      ]
+    },
+    {
+      "title": "アシストコンボ",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "一部キャラクターのアシストコンボ中にバーンアウトし、硬直終了と同時に再度同じアシストコンボの初段を発動した際にコンボの2段目以降が継続しなかった不具合を修正しました。<br>対象キャラクターと対象アシストコンボは下記になります。<br><br>・ルーク<br>アシストコンボ2<br><br>・マノン<br>アシストコンボ3<br><br>・ジュリ<br>アシストコンボ2<br>アシストコンボ3<br><br>・JP<br>アシストコンボ3<br><br>・ダルシム<br>アシストコンボ2"
+        }
+      ]
+    }
+  ],
+  "fighter": [
+    {
+      "fighter_id": "ルーク",
+      "detail": [
+        {
+          "title": "しゃがみ弱P",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ヒットバックを縮小しました。<br>②ガードバックを縮小しました。"
+            }
+          ]
+        },
+        {
+          "title": "しゃがみ中P",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ヒットバックを縮小しました。"
+            }
+          ]
+        },
+        {
+          "title": "しゃがみ弱K",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ヒットバックを縮小しました。<br>②ガードバックを縮小しました。"
+            }
+          ]
+        },
+        {
+          "title": "アウトローキック<br>（←+強K）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ドライブラッシュの慣性が強く残るようにしました。"
+            }
+          ]
+        },
+        {
+          "title": "トリプルインパクト<br>（弱P＞中P＞強P）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①2段目の即時補正を撤廃しました。<br>②最終段のダメージを600⇒800に変更しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "LUKE",
+      "fighter_tool_name": "luke",
+      "fighter_url_name": "luke"
+    },
+    {
+      "fighter_id": "ジェイミー",
+      "detail": [
+        {
+          "title": "【SA1】武麗禽",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "初段/2段目がカウンターヒットした際に、ダメージが増加していた不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie"
+    },
+    {
+      "fighter_id": "マノン",
+      "detail": [
+        {
+          "title": "アシストコンボ2",
+          "body": [
+            {
+              "category": "調整",
+              "text": "コンボ内容を下記に変更しました。<br><br>・SAゲージが0の時<br>立ち中K＞ODロン・ポワン＞(中)デガジェ"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "MANON",
+      "fighter_tool_name": "manon",
+      "fighter_url_name": "manon"
+    },
+    {
+      "fighter_id": "キンバリー",
+      "detail": [
+        {
+          "title": "細工手裏剣/乱れ細工手裏剣<br>（↓↓+P or PP）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "始動補正とコンボ補正を20%⇒10%に変更しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "KIMBERLY",
+      "fighter_tool_name": "kimberly",
+      "fighter_url_name": "kimberly"
+    },
+    {
+      "fighter_id": "マリーザ",
+      "detail": [
+        {
+          "title": "地面バウンド中のやられ判定",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "地面バウンドやられ中のやられ判定を他の大型キャラクターと同等の判定に変更しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa"
+    },
+    {
+      "fighter_id": "JP",
+      "detail": [
+        {
+          "title": "立ち中K",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ヒット時の硬直差を+1F⇒+3Fに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "しゃがみ強P",
+          "body": [
+            {
+              "category": "調整",
+              "text": "攻撃持続2F目から攻撃持続終了まで、腕部分のやられ判定を対空無敵に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "ヴィリーナ<br>（→+強K）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①初段のコンボカウント上限値を増加しました。<br>②初段のコンボカウント加算値を減少しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】トリグラフ<br>（↓↓+P）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①地上ヒット時の吹き飛び時間を1F減少しました。<br>②地上ヒット時のダウン時間を1F延長しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】ストリボーグ<br>(↓↘→+P or PP)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "初段ヒット時のみ、2段目の攻撃判定が拡大されるようにしました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】トルバラン<br>(↓↘→+K or KK)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "攻撃持続終了後に残っていた飛び道具を相殺する判定を削除しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】アブニマーチ<br>(↓↙←+K or KK)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "即時補正を25%⇒10%に変更しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp"
+    },
+    {
+      "fighter_id": "ジュリ",
+      "detail": [
+        {
+          "title": "アシストコンボ2",
+          "body": [
+            {
+              "category": "調整",
+              "text": "コンボ内容を下記に変更しました。<br><br>・SAゲージが0の時<br>しゃがみ中P＞OD風破刃＞(強)天穿輪"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri"
+    },
+    {
+      "fighter_id": "ディージェイ",
+      "detail": [
+        {
+          "title": "フェイスブレイカー<br>（←+強K）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "地上カウンター/パニッシュカウンター時のみ押し合い判定を横方向に若干拡大しました。<br>※4HK＞ODジョスクール＞ODマキシマムストライク＞Dラッシュ＞4HK後の必殺技が逆方向に発動しないようにする調整となります。"
+            }
+          ]
+        },
+        {
+          "title": "3ビートコンボ<br>（弱P＞中K＞中K）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①2段目の硬直を18F⇒20Fに変更しました。<br>②2段目のヒット・ガード時ののけぞり時間を2F増加しました。<br>③2段目のヒットバックを縮小しました。<br>④2段目に始動補正20%を追加しました。<br>⑤2段目ヒット時の強制立たせ効果を撤廃しました。<br>⑥2段目から最終段への派生可能タイミングを2F延長しました。<br>⑦2段目ガード時の相手のリアクションを変更しました。<br>⑧最終段の硬直を21F⇒19Fに変更しました。<br>⑨最終段のヒット・ガード時ののけぞり時間を2F減少しました。<br>⑩最終段のヒットストップを9F⇒11Fに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【中/強】ジャックナイフマキシマム<br>（↓溜め↑+中K or 強K）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "着地時に姿勢が低くなる特定の空中技（ジュリの疾空閃など）の着地硬直にヒットするように、初段の根元部分の攻撃判定を下方向に若干拡大しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】ワニングムーン<br>(↓↙←+K＞中K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ガード時のDゲージ減少量を4000⇒6000に変更しました。<br>②パニッシュカウンター時のヒット効果を叩きつけダウン⇒地面バウンドに変更しました。<br>③始動補正30%を追加しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】ワニングムーン<br>(↓↙←+KK＞中K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "空中ヒット時のヒット効果をダウン⇒地面バウンドに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【SA1】グレイテストソバット",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①空中ヒット時のヒット効果をきりもみ吹き飛び⇒スライドダウンに変更しました。<br>②コンボカウント上限値を増加しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay"
+    },
+    {
+      "fighter_id": "リュウ",
+      "detail": [
+        {
+          "title": "[電刃錬気]波掌撃<br>（↓↙←+強P）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "画面内に波動拳が残っている状態で発動しようとすると、通常版の強波掌撃が発動してしまう不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu"
+    },
+    {
+      "fighter_id": "エドモンド本田",
+      "detail": [
+        {
+          "title": "【SA2】スーパー鬼無双",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①頭突き部分のヒットバックや張り手部分の攻撃判定を調整し、動作途中で空振りしにくくしました。<br>②頭突き部分のダウン時間を延長し、以降の攻撃がヒットしなかった際に反撃を受けないようにしました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda"
+    },
+    {
+      "fighter_id": "ブランカ",
+      "detail": [
+        {
+          "title": "【OD】[ライトニングビースト]エレクトリックサンダー<br>（↓↙←+PP）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "SA2発動中、ODエレクトリックサンダーの特定のタイミングでブランカちゃん爆弾を起動すると、ブランカちゃん爆弾の挙動がOD版にならなかった不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka"
+    },
+    {
+      "fighter_id": "ガイル",
+      "detail": [
+        {
+          "title": "【通常】ソニックブーム<br>（←溜め→+P）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①弱・強版のSAゲージ増加量を600⇒300に変更しました。<br>②中版のSAゲージ増加量を600⇒450に変更しました。<br>③ドライブゲージ増加量を1000⇒500に変更しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile"
+    },
+    {
+      "fighter_id": "春麗",
+      "detail": [
+        {
+          "title": "【OD】気功拳（モダン操作）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "手動操作でOD気功拳を入力時、下方向の入力が行われていると、通常版の気功拳が発動してしまう不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【強】天昇脚<br>（↓↓+強K）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "初段のみヒットした際のダウン時間を延長しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli"
+    },
+    {
+      "fighter_id": "ザンギエフ",
+      "detail": [
+        {
+          "title": "ニーバット<br>（→+中K）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ガード時の硬直差を-3F⇒-4Fに変更しました。<br>②動作2F目以降の体部分のやられ判定を前方に拡大しました。<br>※発動～着地までの足元部分のやられ判定は拡大していません。<br>③動作2F～6F目の見た目にあわせてキャラクターの中心軸が移動するようにしました。"
+            }
+          ]
+        },
+        {
+          "title": "ヘッドバット<br>（→+強P）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①始動補正25%を追加しました。<br>②コンボ補正を10%⇒20%に変更しました。<br>③ヒット時の硬直差を+7F⇒+8Fに変更しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief"
+    },
+    {
+      "fighter_id": "ダルシム",
+      "detail": [
+        {
+          "title": "アシストコンボ2",
+          "body": [
+            {
+              "category": "調整",
+              "text": "コンボ内容を下記に変更しました。<br><br>・SAゲージが0の時<br>合掌キック＞ODヨガフレイム＞ロングスライディング"
+            }
+          ]
+        },
+        {
+          "title": "立ち中P",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ヒット時の硬直差を-2F⇒±0に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "立ち強K",
+          "body": [
+            {
+              "category": "調整",
+              "text": "パニッシュカウンター時の硬直差を+21F⇒+24Fに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "ジャンプ中P",
+          "body": [
+            {
+              "category": "調整",
+              "text": "腕のやられ判定先端部分を、相手のめくりジャンプ攻撃に当たらなくしました。"
+            }
+          ]
+        },
+        {
+          "title": "涅槃パンチ<br>（↙+強P）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "空中ヒット時の横方向への吹き飛び距離を縮小しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】ヨガファイア<br>(↓↘→+P)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ホールド版に移行するタイミングを5F⇒7Fに変更しました。<br>②ホールド版ガード時の硬直差を-3F⇒-1Fに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】ヨガファイア<br>(↓↘→+PP)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①初段ヒット時ののけぞり時間を20F⇒24Fに変更しました。<br>②初段のヒットバックを縮小しました。<br>③攻撃前に発生する体部分のやられ判定を削除しました。<br>④攻撃後の体部分のやられ判定を後方に縮小しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】ヨガフレイム<br>（→↘↓↙←+PP）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①初段の攻撃判定を前方に拡大しました。<br>②2段目以降のコンボ中の相手にのみヒットする攻撃判定を拡大しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】ヨガコメット<br>（空中で→↘↓↙←+PP）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "相手にジャストパリィを取られた際に、各種動作で再行動を行っても着地までジャストパリィの補正が継続されてしまう現象を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【SA1】ヨガインフェルノ",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ガード時、相手に回復可能ダメージが発生するようにしました。<br>※回復可能ダメージは792となり、バーンアウト中は492の削りダメージ+300の回復可能ダメージとなります。<br>②ガード時のドライブゲージ減少量を2520⇒5040に変更しました。<br>③弱・中版の全体硬直を133F⇒128Fに変更しました。<br>④弱・中版のガード時の硬直差を-15F⇒-10Fに変更しました。<br>⑤弱・中版のガードバックを増加しました。<br>⑥強版の発動～攻撃持続3F目までのやられ判定を、立ち状態⇒しゃがみ状態と同等の高さに変更しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "DHALSIM",
+      "fighter_tool_name": "dhalsim",
+      "fighter_url_name": "dhalsim"
+    },
+    {
+      "fighter_id": "ラシード",
+      "detail": [
+        {
+          "title": "後方ステップ",
+          "body": [
+            {
+              "category": "調整",
+              "text": "動作1F～15F間の押し合い判定が立ち状態より小さくなっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "しゃがみ弱P",
+          "body": [
+            {
+              "category": "調整",
+              "text": "動作1F～7F間の頭上部分に、空中攻撃にのみ反応するやられ判定を付与しました。"
+            }
+          ]
+        },
+        {
+          "title": "アサルト・ネイル(モダン)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①モダン操作時の入力を(アサルトロール中に→+攻撃)に変更しました。<br>※アサルトロール後、最速でアサルトネイル以外の技を発動しようとした際に暴発してしまうのを防ぐための調整となります。<br>②アサルトネイルの入力変更に伴い、バーンアウト中のアシストコンボ2の内容を下記に変更しました。<br>立ち中P＞ライジングキック＞(強)アラビアンサイクロン＞アサルトロール＞アサルトネイル"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid"
+    },
+    {
+      "fighter_id": "A.K.I.",
+      "detail": [
+        {
+          "title": "【OD】蛇頭鞭<br>(↓↘→+PP)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "毒破裂時、パニッシュカウンターで有利フレームが増加していなかった不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki"
+    },
+    {
+      "fighter_id": "エド",
+      "detail": [
+        {
+          "title": "立ち強K",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ガード時の硬直差を+3F⇒+4Fに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "ジャンプ強P",
+          "body": [
+            {
+              "category": "調整",
+              "text": "攻撃持続を4F⇒5Fに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "ジャンプ強K",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①空中ヒット時の吹き飛び時間を増加しました。<br>②ジャンプの高い位置でヒットした際、エドの着地までの時間を短くしました。"
+            }
+          ]
+        },
+        {
+          "title": "【弱】サイコブリッツ<br>（↓↙←+弱P）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "画面端でガードさせた際に、エド側にガードバックが発生するようにしました。"
+            }
+          ]
+        },
+        {
+          "title": "【弱】サイコフリッカー<br>(↓↘→+弱K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "パニッシュカウンター時の追撃猶予を1Ｆ延長しました。"
+            }
+          ]
+        },
+        {
+          "title": "【SA2】サイコキャノン",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ヒット後に追撃した際に、コンボが終了するまでエド側のSAゲージ増加量が80%になるようにしました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "ED",
+      "fighter_tool_name": "ed",
+      "fighter_url_name": "ed"
+    },
+    {
+      "fighter_id": "豪鬼",
+      "detail": [
+        {
+          "title": "【通常】豪波動拳<br>(↓↘→+P)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "OD版が画面内に残っている間に通常版が発動できてしまう不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "GOUKI",
+      "fighter_tool_name": "gouki",
+      "fighter_url_name": "gouki_akuma"
+    },
+    {
+      "fighter_id": "ベガ",
+      "detail": [
+        {
+          "title": "ドライブリバーサル",
+          "body": [
+            {
+              "category": "調整",
+              "text": "攻撃判定とガード待機判定を縮小しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】[サイコマイン]サイコクラッシャーアタック<br>（←溜め→+P）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "①飛び道具相殺直後にSA3キャンセルを行うと、サイコクラッシャーアタック・SA3のどちらの攻撃も相手に届かないといった状況が発生していた為、SA3によるキャンセルをヒット時のみ行えるように変更しました。<br>②相手に攻撃を当てた後に飛び道具を相殺すると、動作が途中でキャンセルされていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】サイコクラッシャーアタック<br>（←溜め→+P orPP）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "相手を通り過ぎて着地した際、通常時とバーンアウト中でやられ判定が異なっていた為、通常時に合わせる形でバーンアウト中のやられ判定を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】[サイコマイン]サイコクラッシャーアタック<br>（←溜め→+P orPP）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "①初段～2段目をジャストパリィされた後、3段目をガード・ノーマルパリィするかで爆発の有無が異なっていた為、ヒット時以外は爆発が発生しないように修正しました。<br>②ヒット後の追撃でコンボ補正値が加算されてしまうことがある不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】ダブルニープレス<br>(↓↘→+K)",
+          "body": [
+            {
+              "category": "調整・不具合修正",
+              "text": "①ヒット・ガード時、2段目の攻撃持続終了～硬直中の体部分のやられ判定を縮小しました。<br>②上記①で縮小したやられ判定と同程度、ガードバックを縮小しました。<br>③初段ヒット後に2段目が当たらなかった際に、空振り時と同等の硬直になっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】[サイコマイン]デビルリバース<br>（↓溜め↑+K＞P or PP）、<br>【OD】[サイコマイン]サイコクラッシャーアタック<br>（←溜め→+PP）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "爆発が発生しているにも関わらず、サイコマインが相手に残り続けてしまうことがある不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】デビルリバース<br>（↓溜め↑+K＞PP）、<br>【通常/OD】[サイコマイン]デビルリバース<br>（↓溜め↑+K＞P or PP）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "初段ヒット後の押し合い判定を下方向に拡大し、2段目以降が相手と反対側に出てしまう現象を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】[サイコマイン]バックフィストコンボ<br>（↓↙←+P）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "初段をジャストパリィ・当身された際に、2段目が空振りしても爆発が発生していた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】[サイコマイン]バックフィストコンボ<br>（↓↙←+PP）",
+          "body": [
+            {
+              "category": "調整・不具合修正",
+              "text": "①爆発の発生を2F遅くし、高い位置の相手にヒットした際に空振りしにくくしました。<br>②ヒット時の吹き飛びとガード時ののけぞりを調整し、上記①による状況の差異を出にくくしました。<br>③初段～3段目までをジャストパリィ・当身された際に、以降の攻撃が空振りしても爆発が発生していた不具合を修正しました。<br>※初段～2段目までのジャストパリィ・当身の有無に関わらず、3段目がヒット・ガード・パリィ・アーマー判定に触れた際に爆発が発生するようにしています。"
+            }
+          ]
+        },
+        {
+          "title": "【SA1】ニープレスナイトメア",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "ヒット時にタイムカウントが停止していなかった不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【SA2】サイコパニッシャー",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "①ヒットの演出終了後、時間停止が長く続いていた不具合を修正しました。<br>※タイムカウントの停止時間やドライブゲージの回復タイミング、背景の動き出し等に影響します。<br>②トレーニングモードで一部の行動をダウンリバーサルに設定した状態でSA2を当てると、正しくダウンリバーサルが機能しない不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison"
+    }
+  ],
+  "current_version": "20240924",
+  "versions": [
+    {
+      "id": "20260803",
+      "title": "2026.08.03 update"
+    },
+    {
+      "id": "20260528",
+      "title": "2026.05.28 update"
+    },
+    {
+      "id": "20260415",
+      "title": "2026.04.15 update"
+    },
+    {
+      "id": "20260317",
+      "title": "2026.03.17 update"
+    },
+    {
+      "id": "20251216",
+      "title": "2025.12.16 update"
+    },
+    {
+      "id": "20251113",
+      "title": "2025.11.13 update"
+    },
+    {
+      "id": "20251022",
+      "title": "2025.10.22 update"
+    },
+    {
+      "id": "20251015",
+      "title": "2025.10.15 update"
+    },
+    {
+      "id": "20250901",
+      "title": "2025.09.01 update"
+    },
+    {
+      "id": "20250805",
+      "title": "2025.08.05 update"
+    },
+    {
+      "id": "202506",
+      "title": "202506 Ver."
+    },
+    {
+      "id": "20250205",
+      "title": "2025.02.05 update"
+    },
+    {
+      "id": "20241202",
+      "title": "2024.12.02 update"
+    },
+    {
+      "id": "20240924",
+      "title": "2024.09.24 update"
+    },
+    {
+      "id": "20240626",
+      "title": "2024.06.26 update"
+    },
+    {
+      "id": "202405",
+      "title": "202405 Ver."
+    },
+    {
+      "id": "20240227",
+      "title": "2024.02.27 update"
+    },
+    {
+      "id": "20231201",
+      "title": "2023.12.01 update"
+    },
+    {
+      "id": "20230927",
+      "title": "2023.09.27 update"
+    },
+    {
+      "id": "20230808",
+      "title": "2023.08.08 update"
+    },
+    {
+      "id": "20230724",
+      "title": "2023.07.24 update"
+    }
+  ],
+  "fighter_list": [
+    {
+      "fighter_id": "luke",
+      "fighter_alpha": "LUKE",
+      "fighter_tool_name": "luke",
+      "fighter_url_name": "luke",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "jamie",
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "manon",
+      "fighter_alpha": "MANON",
+      "fighter_tool_name": "manon",
+      "fighter_url_name": "manon",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "kimberly",
+      "fighter_alpha": "KIMBERLY",
+      "fighter_tool_name": "kimberly",
+      "fighter_url_name": "kimberly",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "marisa",
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "lily",
+      "fighter_alpha": "LILY",
+      "fighter_tool_name": "lily",
+      "fighter_url_name": "lily",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jp",
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "juri",
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "deejay",
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "cammy",
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ryu",
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "honda",
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "blanka",
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "guile",
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ken",
+      "fighter_alpha": "KEN",
+      "fighter_tool_name": "ken",
+      "fighter_url_name": "ken",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "chunli",
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "zangief",
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "dhalsim",
+      "fighter_alpha": "DHALSIM",
+      "fighter_tool_name": "dhalsim",
+      "fighter_url_name": "dhalsim",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "rashid",
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "aki",
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ed",
+      "fighter_alpha": "ED",
+      "fighter_tool_name": "ed",
+      "fighter_url_name": "ed",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "gouki",
+      "fighter_alpha": "GOUKI",
+      "fighter_tool_name": "gouki",
+      "fighter_url_name": "gouki_akuma",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "vega",
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "terry",
+      "fighter_alpha": "TERRY",
+      "fighter_tool_name": "terry",
+      "fighter_url_name": "terry",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "mai",
+      "fighter_alpha": "MAI",
+      "fighter_tool_name": "mai",
+      "fighter_url_name": "mai",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "elena",
+      "fighter_alpha": "ELENA",
+      "fighter_tool_name": "elena",
+      "fighter_url_name": "elena",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "sagat",
+      "fighter_alpha": "SAGAT",
+      "fighter_tool_name": "sagat",
+      "fighter_url_name": "sagat",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "cviper",
+      "fighter_alpha": "C.VIPER",
+      "fighter_tool_name": "cviper",
+      "fighter_url_name": "cviper",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "alex",
+      "fighter_alpha": "ALEX",
+      "fighter_tool_name": "alex",
+      "fighter_url_name": "alex",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ingrid",
+      "fighter_alpha": "INGRID",
+      "fighter_tool_name": "ingrid",
+      "fighter_url_name": "ingrid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "yasmine",
+      "fighter_alpha": "YASMINE",
+      "fighter_tool_name": "yasmine",
+      "fighter_url_name": "yasmine",
+      "current": false,
+      "exist": false
+    }
+  ],
+  "current_fighter": ""
+}

@@ -10,6 +10,7 @@
 - [move-db](move-db/README.md) — 全キャラの技データベース(JSON)
 - [combo-count](combo-count/README.md) — コンボカウント(始動値/加算値/上限値)の実測記録
 - [info-sources](info-sources/README.md) — 攻略情報の情報源の索引(キャラ別の発信者・サイト)
+- [patch-notes](patch-notes/README.md) — 公式パッチノート・不具合修正告知の原文保管
 
 ## このプロジェクトについて
 

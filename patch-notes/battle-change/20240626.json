@@ -1,0 +1,764 @@
+{
+  "title": "2024.06.26 update",
+  "title_bg": "",
+  "policy": [],
+  "common": [
+    {
+      "title": "パリィドライブラッシュ",
+      "body": [
+        {
+          "category": "",
+          "text": "飛び道具をジャストパリィした際にステップの入力がリセットされないように変更しました。<br />ジャストパリィ直後のステップやドライブラッシュの入力に影響があります。"
+        }
+      ]
+    },
+    {
+      "title": "受け身",
+      "body": [
+        {
+          "category": "",
+          "text": "直前のダウンで後方受け身を発動していた場合のみ、攻撃を受ける前からボタン二つをホールドしていると、ダウン時に後ろ受け身が発動してしまう不具合を修正しました。"
+        }
+      ]
+    },
+    {
+      "title": "ドライブリバーサル",
+      "body": [
+        {
+          "category": "",
+          "text": "ドライブリバーサルが相打ちした時のみKOできてしまう不具合を修正しました。"
+        }
+      ]
+    },
+    {
+      "title": "ドライブパリィ",
+      "body": [
+        {
+          "category": "",
+          "text": "画面が揺れる攻撃をパリィした際に、揺れが発生しなくなっていた不具合を修正しました。"
+        }
+      ]
+    },
+    {
+      "title": "アピール",
+      "body": [
+        {
+          "category": "",
+          "text": "モダン操作のアピールコマンドを「弱+中+強+必」から「弱+中+強+必+パリィ+アシスト」に変更しました"
+        }
+      ]
+    }
+  ],
+  "fighter": [
+    {
+      "fighter_id": "ルーク",
+      "detail": [
+        {
+          "title": "アシストコンボ1",
+          "body": [
+            {
+              "category": "",
+              "text": "連打キャンセル可能なタイミングの間は2段目への入力を受け付けるようにしました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "LUKE",
+      "fighter_tool_name": "luke",
+      "fighter_url_name": "luke"
+    },
+    {
+      "fighter_id": "ジェイミー",
+      "detail": [
+        {
+          "title": "【SA1】武麗禽",
+          "body": [
+            {
+              "category": "",
+              "text": "前回の調整にてヒット数が増えたことにより、ドライブゲージの増減量に影響が出てしまっていたため調整前の値に揃えました。<br /><br />①ガード時のドライブゲージ減少量を200減少しました。<br />②パリィ時のドライブゲージ増加量を2000減少しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie"
+    },
+    {
+      "fighter_id": "キンバリー",
+      "detail": [
+        {
+          "title": "【OD】疾駆け",
+          "body": [
+            {
+              "category": "",
+              "text": "特定の入力方法で発動した際にOD技のSEが再生されない不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "特定の対空技",
+          "body": [
+            {
+              "category": "",
+              "text": "自身が飛び上がる対空技の中で、離陸後に対空無敵となっているにもかかわらず空中投げに負けやすくなってしまっていたものに対して、投げ無敵時間を付与しました。<br /><br />該当の技は以下の通りです。<br /><br />武神旋風脚<br />弱　7F～11Fまで投げ無敵<br />中　8F～12まで投げ無敵<br />強　9F～13Fまで投げ無敵<br />OD　7F～11Fまで投げ無敵"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "KIMBERLY",
+      "fighter_tool_name": "kimberly",
+      "fighter_url_name": "kimberly"
+    },
+    {
+      "fighter_id": "マリーザ",
+      "detail": [
+        {
+          "title": "アシストコンボ1",
+          "body": [
+            {
+              "category": "",
+              "text": "連打キャンセル可能なタイミングの間は2段目への入力を受け付けるようにしました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa"
+    },
+    {
+      "fighter_id": "JP",
+      "detail": [
+        {
+          "title": "アシストコンボ2",
+          "body": [
+            {
+              "category": "",
+              "text": "ODストリボーグがガードorアーマーヒットしてた場合、SA2発動時にアシストコンボが終了するようにしました"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp"
+    },
+    {
+      "fighter_id": "ジュリ",
+      "detail": [
+        {
+          "title": "【OD】風破刃",
+          "body": [
+            {
+              "category": "",
+              "text": "前回の調整にて発生を早くした際に、対応漏れがあった部分を修正しました。<br /><br />①風破ストックが溜まるタイミングを14F⇒12Fに変更しました。<br />②飛び道具相殺判定の発生タイミングを12F⇒10Fに変更しました。<br />③ガード待機判定が出るタイミングを2F早くしました。<br />④ガード待機判定を攻撃判定と同じ大きさに拡大しました。"
+            }
+          ]
+        },
+        {
+          "title": "特定のターゲットコンボ",
+          "body": [
+            {
+              "category": "",
+              "text": "中P+中K、強P+強Kの同時押しで派生行動が発動しないようにしました。<br />主にキャンセル可能かつターゲットコンボ始動になっている技や、派生行動があり硬直が短い必殺技等に対して対応を行っています。<br />キャンセルドライブラッシュやドライブインパクト、硬直終了後即ドライブラッシュ等を狙った場面で、入力タイミングのミスから意図しない派生行動が出ないようにするための調整となります。<br />※両ボタンを完全に同時入力した時のみの対応となります。<br /><br />前回行った上記の調整に関して、一部のターゲットコンボが未対応となってしまっていたため、改めて対応を行いました。<br /><br />対象となる技は以下の通りです。<br /><br />死紋蹴(中P＞←+強P)"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri"
+    },
+    {
+      "fighter_id": "ディージェイ",
+      "detail": [
+        {
+          "title": "特定の対空技",
+          "body": [
+            {
+              "category": "",
+              "text": "自身が飛び上がる対空技の中で、離陸後に対空無敵となっているにもかかわらず空中投げに負けやすくなってしまっていたものに対して、投げ無敵時間を付与しました。<br /><br />該当の技は以下の通りです。<br /><br />ジャックナイフマキシマム<br />中　5F～6Fまで投げ無敵<br />強　5F～6Fまで投げ無敵"
+            }
+          ]
+        },
+        {
+          "title": "特定のターゲットコンボ",
+          "body": [
+            {
+              "category": "",
+              "text": "中P+中K、強P+強Kの同時押しで派生行動が発動しないようにしました。<br />主にキャンセル可能かつターゲットコンボ始動になっている技や、派生行動があり硬直が短い必殺技等に対して対応を行っています。<br />キャンセルドライブラッシュやドライブインパクト、硬直終了後即ドライブラッシュ等を狙った場面で、入力タイミングのミスから意図しない派生行動が出ないようにするための調整となります。<br />※両ボタンを完全に同時入力した時のみの対応となります。<br /><br />前回行った上記の調整に関して、一部のターゲットコンボが未対応となってしまっていたため、改めて対応を行いました。<br /><br />対象となる技は以下の通りです。<br /><br />3ビートコンボ(弱P＞中K)"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay"
+    },
+    {
+      "fighter_id": "A.K.I.",
+      "detail": [
+        {
+          "title": "立ち中パンチ",
+          "body": [
+            {
+              "category": "",
+              "text": "ヒット時の押し合い判定を上方向に拡大しました。<br />※空中ヒット時に相手との位置を入れ替わりにくくする調整となります。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki"
+    },
+    {
+      "fighter_id": "ブランカ",
+      "detail": [
+        {
+          "title": "しゃがみ中キック",
+          "body": [
+            {
+              "category": "",
+              "text": "前回行ったしゃがみ中キックの硬直増加とやられ判定拡大の調整がSA2発動中のしゃがみ中キックに適用されていなかった不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "レイドジャンプ",
+          "body": [
+            {
+              "category": "",
+              "text": "モダン操作時、レイドジャンプ中に投げボタンで空中投げが出せない不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "ローリングアタック/バーチカルローリング",
+          "body": [
+            {
+              "category": "",
+              "text": "ガード後の跳ね返り動作中、相手を押し返すことができない不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka"
+    },
+    {
+      "fighter_id": "ラシード",
+      "detail": [
+        {
+          "title": "特定の対空技",
+          "body": [
+            {
+              "category": "",
+              "text": "自身が飛び上がる対空技の中で、離陸後に対空無敵となっているにもかかわらず空中投げに負けやすくなってしまっていたものに対して、投げ無敵時間を付与しました。<br /><br />該当の技は以下の通りです。<br /><br />スピニングミキサー<br/>強（強化版含む）　8F～10Fまで投げ無敵"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid"
+    },
+    {
+      "fighter_id": "ケン",
+      "detail": [
+        {
+          "title": "奮迅脚",
+          "body": [
+            {
+              "category": "",
+              "text": "前回行った奮迅脚の入力優先を再調整し、OD技よりも優先度が高くなる入力を「ニュートラル+KK」から「ニュートラル+KKK」に変更しました。<br />※モダン操作は「ニュートラル+攻撃ボタン三つ」となります。<br /><br />奮迅脚版昇龍拳の攻撃発生を早める調整によって、しゃがみ中キックなどから奮迅脚を入力する機会が増え、その結果OD技の暴発頻度も増加することが想定されたため、入力優先度を変更する調整を行っていました。<br />しかしながら想定以上に普段のOD技入力に影響が出てしまっていたため、入力方法を見直して出来る限り影響が少ない形となるようにしました。<br /><br />OD技をボタン三つで入力する場合には影響が出てしまいますが、奮迅脚を確実に出すことができる方法も必要だと考えているため、今回の形での実装となります。<br />※ボタン三つの場合も、方向キーをいずれかに入力した状態でボタン入力を行えばOD技を発動することができます。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "KEN",
+      "fighter_tool_name": "ken",
+      "fighter_url_name": "ken"
+    },
+    {
+      "fighter_id": "エドモンド本田",
+      "detail": [
+        {
+          "title": "特定の対空技",
+          "body": [
+            {
+              "category": "",
+              "text": "自身が飛び上がる対空技の中で、離陸後に対空無敵となっているにもかかわらず空中投げに負けやすくなってしまっていたものに対して、投げ無敵時間を付与しました。<br /><br />該当の技は以下の通りです。<br /><br />百貫落とし<br />OD　5F～13Fまで投げ無敵"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda"
+    },
+    {
+      "fighter_id": "ザンギエフ",
+      "detail": [
+        {
+          "title": "ツンドラストーム",
+          "body": [
+            {
+              "category": "",
+              "text": "前回の調整で行った「ニュートラル＞↓＞ニュートラル＞↓」の二回目のニュートラルタイミングでパリィを入力した際に、ツンドラストームのコマンドが成立しなくする対応がモダン操作にのみ適用されていなかった不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "立ち中K",
+          "body": [
+            {
+              "category": "",
+              "text": "特定の組み合わせにおいて調整内容が想定以上に機能してしまっており、地上戦のやり取りが有利になりすぎていたため再調整を行いました。<br /><br />攻撃判定を縮小し、以前と同じリーチに戻しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief"
+    },
+    {
+      "fighter_id": "エド",
+      "detail": [
+        {
+          "title": "アシストコンボ3",
+          "body": [
+            {
+              "category": "",
+              "text": "初段（立ち強P）でアシストコンボを止め、再度初段を出そうとした際に先行入力が効かなくなっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "特定のターゲットコンボ",
+          "body": [
+            {
+              "category": "",
+              "text": "中P+中K、強P+強Kの同時押しで派生行動が発動しないようにしました。<br />主にキャンセル可能かつターゲットコンボ始動になっている技や、派生行動があり硬直が短い必殺技等に対して対応を行っています。<br />キャンセルドライブラッシュやドライブインパクト、硬直終了後即ドライブラッシュ等を狙った場面で、入力タイミングのミスから意図しない派生行動が出ないようにするための調整となります。<br />※両ボタンを完全に同時入力した時のみの対応となります。<br /><br />前回行った上記の調整に関して、一部のターゲットコンボが未対応となってしまっていたため、改めて対応を行いました。<br /><br />対象となる技は以下の通りです。<br /><br />ボディブローコンビネーション(中P＞強P)<br />ヒットマンコンビネーション(中K＞中K)<br />ロースマッシュコンビネーション(↓+強K＞強P)"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "ED",
+      "fighter_tool_name": "ed",
+      "fighter_url_name": "ed"
+    },
+    {
+      "fighter_id": "豪鬼",
+      "detail": [
+        {
+          "title": "竜巻斬空脚（弱）/鬼哭連撃（2段目）/金剛灼火（弱派生）",
+          "body": [
+            {
+              "category": "",
+              "text": "相手にガードされた際に硬直の数フレームを別のアクションでキャンセルできた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "豪昇龍拳/竜巻斬空脚",
+          "body": [
+            {
+              "category": "",
+              "text": "ジャストパリィ時のドライブゲージ回復量が少なくなっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "天魔空刃脚",
+          "body": [
+            {
+              "category": "",
+              "text": "着地間際にヒットさせた場合にコンボ補正が減少してしまう不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "斬空波動拳",
+          "body": [
+            {
+              "category": "",
+              "text": "相手側の対処が難しくなりすぎていた部分があったため、対処の難易度を緩和する調整を行いました。<br /><br />①攻撃判定の上半分をコンボ時のみヒットする判定に変更しました。<br />②やられ判定を前方に拡大しました。"
+            }
+          ]
+        },
+        {
+          "title": "阿修羅閃空",
+          "body": [
+            {
+              "category": "",
+              "text": "相手の後ろ側に回り込んでいないにも関わらず、攻撃を避けてしまう現象を修正しました。<br /><br />①移動中のやられ判定を拡大しました。<br />②画面端に密着している相手に向けて発動した際に、相手に完全に重なってしまうことがないようにしました。"
+            }
+          ]
+        },
+        {
+          "title": "【CA】瞬獄殺",
+          "body": [
+            {
+              "category": "",
+              "text": "ヒット時の演出中に位置が入れ替わり、相手の溜めコマンドが解除されてしまう現象を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "特定のターゲットコンボ",
+          "body": [
+            {
+              "category": "",
+              "text": "中P+中K、強P+強Kの同時押しで派生行動が発動しないようにしました。<br />主にキャンセル可能かつターゲットコンボ始動になっている技や、派生行動があり硬直が短い必殺技等に対して対応を行っています。<br />キャンセルドライブラッシュやドライブインパクト、硬直終了後即ドライブラッシュ等を狙った場面で、入力タイミングのミスから意図しない派生行動が出ないようにするための調整となります。<br />※両ボタンを完全に同時入力した時のみの対応となります。<br /><br />前回行った上記の調整に関して、一部のターゲットコンボが未対応となってしまっていたため、改めて対応を行いました。<br /><br />対象となる技は以下の通りです。<br /><br />六腑穿ち(中P＞中P)<br />骸斬り(中K＞強K)"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "GOUKI",
+      "fighter_tool_name": "gouki",
+      "fighter_url_name": "gouki_akuma"
+    }
+  ],
+  "current_version": "20240626",
+  "versions": [
+    {
+      "id": "20260803",
+      "title": "2026.08.03 update"
+    },
+    {
+      "id": "20260528",
+      "title": "2026.05.28 update"
+    },
+    {
+      "id": "20260415",
+      "title": "2026.04.15 update"
+    },
+    {
+      "id": "20260317",
+      "title": "2026.03.17 update"
+    },
+    {
+      "id": "20251216",
+      "title": "2025.12.16 update"
+    },
+    {
+      "id": "20251113",
+      "title": "2025.11.13 update"
+    },
+    {
+      "id": "20251022",
+      "title": "2025.10.22 update"
+    },
+    {
+      "id": "20251015",
+      "title": "2025.10.15 update"
+    },
+    {
+      "id": "20250901",
+      "title": "2025.09.01 update"
+    },
+    {
+      "id": "20250805",
+      "title": "2025.08.05 update"
+    },
+    {
+      "id": "202506",
+      "title": "202506 Ver."
+    },
+    {
+      "id": "20250205",
+      "title": "2025.02.05 update"
+    },
+    {
+      "id": "20241202",
+      "title": "2024.12.02 update"
+    },
+    {
+      "id": "20240924",
+      "title": "2024.09.24 update"
+    },
+    {
+      "id": "20240626",
+      "title": "2024.06.26 update"
+    },
+    {
+      "id": "202405",
+      "title": "202405 Ver."
+    },
+    {
+      "id": "20240227",
+      "title": "2024.02.27 update"
+    },
+    {
+      "id": "20231201",
+      "title": "2023.12.01 update"
+    },
+    {
+      "id": "20230927",
+      "title": "2023.09.27 update"
+    },
+    {
+      "id": "20230808",
+      "title": "2023.08.08 update"
+    },
+    {
+      "id": "20230724",
+      "title": "2023.07.24 update"
+    }
+  ],
+  "fighter_list": [
+    {
+      "fighter_id": "luke",
+      "fighter_alpha": "LUKE",
+      "fighter_tool_name": "luke",
+      "fighter_url_name": "luke",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "jamie",
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "manon",
+      "fighter_alpha": "MANON",
+      "fighter_tool_name": "manon",
+      "fighter_url_name": "manon",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "kimberly",
+      "fighter_alpha": "KIMBERLY",
+      "fighter_tool_name": "kimberly",
+      "fighter_url_name": "kimberly",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "marisa",
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "lily",
+      "fighter_alpha": "LILY",
+      "fighter_tool_name": "lily",
+      "fighter_url_name": "lily",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jp",
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "juri",
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "deejay",
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "cammy",
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ryu",
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "honda",
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "blanka",
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "guile",
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ken",
+      "fighter_alpha": "KEN",
+      "fighter_tool_name": "ken",
+      "fighter_url_name": "ken",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "chunli",
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "zangief",
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "dhalsim",
+      "fighter_alpha": "DHALSIM",
+      "fighter_tool_name": "dhalsim",
+      "fighter_url_name": "dhalsim",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "rashid",
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "aki",
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ed",
+      "fighter_alpha": "ED",
+      "fighter_tool_name": "ed",
+      "fighter_url_name": "ed",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "gouki",
+      "fighter_alpha": "GOUKI",
+      "fighter_tool_name": "gouki",
+      "fighter_url_name": "gouki_akuma",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "vega",
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "terry",
+      "fighter_alpha": "TERRY",
+      "fighter_tool_name": "terry",
+      "fighter_url_name": "terry",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "mai",
+      "fighter_alpha": "MAI",
+      "fighter_tool_name": "mai",
+      "fighter_url_name": "mai",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "elena",
+      "fighter_alpha": "ELENA",
+      "fighter_tool_name": "elena",
+      "fighter_url_name": "elena",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "sagat",
+      "fighter_alpha": "SAGAT",
+      "fighter_tool_name": "sagat",
+      "fighter_url_name": "sagat",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "cviper",
+      "fighter_alpha": "C.VIPER",
+      "fighter_tool_name": "cviper",
+      "fighter_url_name": "cviper",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "alex",
+      "fighter_alpha": "ALEX",
+      "fighter_tool_name": "alex",
+      "fighter_url_name": "alex",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ingrid",
+      "fighter_alpha": "INGRID",
+      "fighter_tool_name": "ingrid",
+      "fighter_url_name": "ingrid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "yasmine",
+      "fighter_alpha": "YASMINE",
+      "fighter_tool_name": "yasmine",
+      "fighter_url_name": "yasmine",
+      "current": false,
+      "exist": false
+    }
+  ],
+  "current_fighter": ""
+}

@@ -1,0 +1,802 @@
+{
+  "title": "2023.12.1 update",
+  "title_bg": "",
+  "policy": [],
+  "common": [
+    {
+      "title": "アシストコンボ",
+      "body": [
+        {
+          "category": "",
+          "text": "アシストコンボの入力受付開始タイミングが想定よりも1F遅くなってしまっていた不具合を修正いたしました。<br /><br />この修正により春麗・キンバリーのアシストコンボにて、ジャンプキャンセルと同時にボタンを押下した場合にアシストコンボが継続しなかった不具合が修正されています。"
+        }
+      ]
+    },
+    {
+      "title": "アピール",
+      "body": [
+        {
+          "category": "",
+          "text": "通常技などから必殺技へキャンセルする際、誤ってボタンを同時押しするとアピールが暴発することがあったため、必殺技の1F目をアピールでキャンセルできないようにしました。"
+        }
+      ]
+    },
+    {
+      "title": "ジャストパリィ",
+      "body": [
+        {
+          "category": "",
+          "text": "ジャストパリィ成立後、特定の操作を行うことで無敵時間が短くなってしまうことがある不具合を修正しました。"
+        }
+      ]
+    },
+    {
+      "title": "起き上がりの先行入力コンボ",
+      "body": [
+        {
+          "category": "",
+          "text": "<ul style='list-style: decimal;'><li>起き上がり時の先行入力受付時間を4F⇒7Fに変更しました。<br /><br /></li><li>相手がSAを発動した際、暗転直後に特定の技を入力した場合のみ、暗転終了時に技が発動してしまう不具合を修正しました。</li></ul>"
+        }
+      ]
+    }
+  ],
+  "fighter": [
+    {
+      "fighter_id": "ジェイミー",
+      "detail": [
+        {
+          "title": "天晴脚(↓+KK)",
+          "body": [
+            {
+              "category": "",
+              "text": "動作1F目をアピールでキャンセル出来ないようにしました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie"
+    },
+    {
+      "fighter_id": "マリーザ",
+      "detail": [
+        {
+          "title": "【SA1】マリーザジャベリン",
+          "body": [
+            {
+              "category": "",
+              "text": "特定のタイミングでホールドを解除すると、攻撃発生が1F早くなってしまう不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa"
+    },
+    {
+      "fighter_id": "JP",
+      "detail": [
+        {
+          "title": "空中投げ",
+          "body": [
+            {
+              "category": "",
+              "text": "【ヴィーハト・アクノ】でワープした後に空中投げを発動すると、空中投げの動作中に被パニッシュカウンター/強制ダウン判定にならない不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "ヴィリーナ(→+HK)",
+          "body": [
+            {
+              "category": "",
+              "text": "<ul style='list-style: decimal;'><li>2段目をしゃがみガードするとキャンセルできなくなる不具合を修正しました。<br /><br /></li><li>2段目の持続部分がヒットした際にキャンセルが1F遅くなる不具合を修正しました。</li></ul>"
+            }
+          ]
+        },
+        {
+          "title": "アブニマーチ(↓↙←+K)",
+          "body": [
+            {
+              "category": "",
+              "text": "後ろ向きの相手にヒットしない不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp"
+    },
+    {
+      "fighter_id": "ジュリ",
+      "detail": [
+        {
+          "title": "【SA2】風水エンジン",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2の効果時間中、時間経過によるドライブゲージの回復量が通常時と異なっていた不具合を修正しました。<br /><br /><span style='font-weight: bold;'>■地上（通常時）</span><br />1Fごとに50⇒40<br /><br /><span style='font-weight: bold;'>■空中（通常時/バーンアウト時）</span><br />1Fごとに10⇒20"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri"
+    },
+    {
+      "fighter_id": "ディージェイ",
+      "detail": [
+        {
+          "title": "マラカスビート(↓↓+PP)",
+          "body": [
+            {
+              "category": "",
+              "text": "<ul style='list-style: decimal;'><li>コマンド入力時にPボタンが1Fずらし押しになった場合、キャンセル発動扱いとなり動作2F目以降が被パニッシュカウンター判定になってしまっていた不具合を修正しました。<br /><br /></li><li>モダン操作にて、コマンド入力時に↓+中攻撃＞1Fずらして強攻撃と入力してしまうと、マラカスビートが発動できない不具合を修正しました。<br /><br /></li><li>SAゲージが1本以下の時、マラカスビート中にボタンを放しても動作が終了しなかった不具合を修正しました。<br /><br /></li><li>モダン操作時、SAゲージ所持量によって動作継続に必要なボタンが異なる不具合を修正しました。</li></ul>"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay"
+    },
+    {
+      "fighter_id": "キャミィ",
+      "detail": [
+        {
+          "title": "フェイタルレッグツイスター(↓↘→+P＞弱P+弱K)",
+          "body": [
+            {
+              "category": "",
+              "text": "特定の技に対してヒットさせた際に、空中の相手を投げるような挙動になってしまう不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy"
+    },
+    {
+      "fighter_id": "リュウ",
+      "detail": [
+        {
+          "title": "鎖骨割り(→+中P)",
+          "body": [
+            {
+              "category": "",
+              "text": "バーンアウト中の相手に中段判定の2段目をガードさせた際、相手のドライブゲージ増加量を625⇒1250に修正しました。<br /><br /><span style='text-indent: -1em; padding-left: 1em; display: block;'>※初段を空振りすると2段目が中段判定となります。</span>"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu"
+    },
+    {
+      "fighter_id": "エドモンド本田",
+      "detail": [
+        {
+          "title": "【SA2】スーパー鬼無双",
+          "body": [
+            {
+              "category": "",
+              "text": "モダン操作のSPボタンで発動する時のみ、溜め時間が5F長くなってしまっていた不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda"
+    },
+    {
+      "fighter_id": "ブランカ",
+      "detail": [
+        {
+          "title": "ロッククラッシュ(→+中P)",
+          "body": [
+            {
+              "category": "",
+              "text": "バーンアウト中の相手に上段判定の2段目をガードさせた際、相手のドライブゲージ増加量を1250⇒625に修正しました。<br /><br /><span style='text-indent: -1em; padding-left: 1em; display: block;'>※初段をガードさせると2段目が上段判定となります。</span>"
+            }
+          ]
+        },
+        {
+          "title": "立ち強P",
+          "body": [
+            {
+              "category": "",
+              "text": "<ul style='list-style: decimal;'><li>相手のドライブパリィ/ジャストパリィ/アーマー判定に当てた際にブランカの硬直が伸びてしまう不具合を修正しました。<br />※空振り時に硬直が伸びることについては仕様となります。<br /><br /></li><li>SA2発動中、必殺技キャンセルの先行入力受付タイミングが早くなっていた不具合を修正しました。</li></ul>"
+            }
+          ]
+        },
+        {
+          "title": "立ち弱K",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、攻撃発生前に体の前に出るやられ判定が相手のめくり攻撃に当たるようになっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "立ち中K",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、必殺技キャンセルの先行入力受付タイミングが早くなっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "しゃがみ弱P",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、攻撃発生前に体の前に出るやられ判定が相手のめくり攻撃に当たるようになっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "しゃがみ中P",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、通常状態と比べて足元のやられ判定が小さくなってしまっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "ジャンプ中P",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、攻撃ヒット時に押し合い判定が拡大しない不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】ローリングアタック(←溜め→+PP)",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、【ローリングキャノン】へキャンセルする際に先行入力が効かなかった不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【強】ローリングアタック(←溜め→+強P)",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、ジャストパリィされた際に跳ね返り距離が短くなってしまっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "バーチカルローリング(↓溜め↑+K)",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、【ローリングキャノン】へキャンセルする際に先行入力が効かなかった不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】バックステップローリング(↓↙←+KK)",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2発動中、初段の攻撃持続が2F短くなってしまっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【SA2】ライトニングビースト",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2の効果時間中、時間経過によるドライブゲージの回復量が通常時と異なっていた不具合を修正しました。<br /><br /><span style='font-weight: bold;'>■地上（通常時）</span><br />1Fごとに50⇒40<br /><br /><span style='font-weight: bold;'>■空中（通常時/バーンアウト時）</span><br />1Fごとに10⇒20"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka"
+    },
+    {
+      "fighter_id": "ガイル",
+      "detail": [
+        {
+          "title": "【SA2】ソリッドパンチャー",
+          "body": [
+            {
+              "category": "",
+              "text": "SA2の効果時間中、時間経過によるドライブゲージの回復量が通常時と異なっていた不具合を修正しました。<br /><br /><span style='font-weight: bold;'>■地上（通常時）</span><br />1Fごとに50⇒40<br /><br /><span style='font-weight: bold;'>■空中（通常時/バーンアウト時）</span><br />1Fごとに10⇒20"
+            }
+          ]
+        },
+        {
+          "title": "後ろ投げ",
+          "body": [
+            {
+              "category": "",
+              "text": "体格が大きいキャラクターに対して投げた際のモーションのズレを修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile"
+    },
+    {
+      "fighter_id": "春麗",
+      "detail": [
+        {
+          "title": "蓮掌(↓↙←+P>強P)",
+          "body": [
+            {
+              "category": "",
+              "text": "バーンアウト中の相手に中段判定の2段目をガードさせた際、相手のドライブゲージ増加量を1250⇒2500に修正しました。<br /><br />※初段を空振りすると2段目が中段判定となります。"
+            }
+          ]
+        },
+        {
+          "title": "ジャンプ中P",
+          "body": [
+            {
+              "category": "",
+              "text": "初段の攻撃持続3～4F目が上段属性になっていた不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli"
+    },
+    {
+      "fighter_id": "ラシード",
+      "detail": [
+        {
+          "title": "【SA2】イウサール",
+          "body": [
+            {
+              "category": "",
+              "text": "<ul style='list-style: decimal;'><li>竜巻の最終段に対して強化可能な必殺技を発動した際、二回目以降強化が行われない不具合を修正しました。<br /><br /></li><li>【アラビアン・サイクロン】で蹴り飛ばした竜巻の最終段のみ、蹴り飛ばす前の速度になってしまっていた不具合を修正しました。</li></ul>"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid"
+    },
+    {
+      "fighter_id": "A.K.I.",
+      "detail": [
+        {
+          "title": "しゃがみ強K",
+          "body": [
+            {
+              "category": "",
+              "text": "攻撃持続2～5F目の攻撃属性が下段判定になっていたため、上段に修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "螭吻(→+HP)",
+          "body": [
+            {
+              "category": "",
+              "text": "ジャストパリィされた際にA.K.I.の硬直が増加してしまう不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【弱】蛇頭鞭(↓↘→+弱P)",
+          "body": [
+            {
+              "category": "",
+              "text": "ジャストパリィされた際にA.K.I.の硬直が増加してしまう不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【中】蛇頭鞭(↓↘→+中)",
+          "body": [
+            {
+              "category": "",
+              "text": "モダン操作時、コマンド成立時に下方向が入力されていると技が発動しなかった不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【中】蛇軽功(N+SP)",
+          "body": [
+            {
+              "category": "",
+              "text": "モダン操作時、特定のコマンド入力を行うことでSPボタン以外で【中蛇軽功】が発動できてしまう不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】蛇軽功(アシスト+N+SP)",
+          "body": [
+            {
+              "category": "",
+              "text": "モダン操作時はニュートラル+SPボタンで【蛇軽功】を発動できますが、【紫煙砲】からのキャンセル版【OD蛇軽功】は方向キーをどこに入力していても発動できるようになっていました。<br /><br />この影響で【OD紫煙砲】入力時にボタンを連打すると、【OD蛇軽功】が暴発しやすくなっていたため、キャンセル版の【OD蛇軽功】コマンドもニュートラル限定に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "雁字搦(↓+PP>弱P＋弱K)",
+          "body": [
+            {
+              "category": "",
+              "text": "<ul style='list-style: decimal;'><li>パニッシュカウンター時にヒットエフェクトが表示されない不具合を修正しました。<br /><br /></li><li>特定の技に対してヒットさせた際に、空中の相手を投げるような挙動になってしまう不具合を修正しました。</li></ul>"
+            }
+          ]
+        },
+        {
+          "title": "【OD】凶襲突(↓↙←+KK)",
+          "body": [
+            {
+              "category": "",
+              "text": "相手を飛び越えた直後のコマンド入力が、本来の方向と逆転してしまっていた不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki"
+    }
+  ],
+  "current_version": "20231201",
+  "versions": [
+    {
+      "id": "20260803",
+      "title": "2026.08.03 update"
+    },
+    {
+      "id": "20260528",
+      "title": "2026.05.28 update"
+    },
+    {
+      "id": "20260415",
+      "title": "2026.04.15 update"
+    },
+    {
+      "id": "20260317",
+      "title": "2026.03.17 update"
+    },
+    {
+      "id": "20251216",
+      "title": "2025.12.16 update"
+    },
+    {
+      "id": "20251113",
+      "title": "2025.11.13 update"
+    },
+    {
+      "id": "20251022",
+      "title": "2025.10.22 update"
+    },
+    {
+      "id": "20251015",
+      "title": "2025.10.15 update"
+    },
+    {
+      "id": "20250901",
+      "title": "2025.09.01 update"
+    },
+    {
+      "id": "20250805",
+      "title": "2025.08.05 update"
+    },
+    {
+      "id": "202506",
+      "title": "202506 Ver."
+    },
+    {
+      "id": "20250205",
+      "title": "2025.02.05 update"
+    },
+    {
+      "id": "20241202",
+      "title": "2024.12.02 update"
+    },
+    {
+      "id": "20240924",
+      "title": "2024.09.24 update"
+    },
+    {
+      "id": "20240626",
+      "title": "2024.06.26 update"
+    },
+    {
+      "id": "202405",
+      "title": "202405 Ver."
+    },
+    {
+      "id": "20240227",
+      "title": "2024.02.27 update"
+    },
+    {
+      "id": "20231201",
+      "title": "2023.12.01 update"
+    },
+    {
+      "id": "20230927",
+      "title": "2023.09.27 update"
+    },
+    {
+      "id": "20230808",
+      "title": "2023.08.08 update"
+    },
+    {
+      "id": "20230724",
+      "title": "2023.07.24 update"
+    }
+  ],
+  "fighter_list": [
+    {
+      "fighter_id": "luke",
+      "fighter_alpha": "LUKE",
+      "fighter_tool_name": "luke",
+      "fighter_url_name": "luke",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jamie",
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "manon",
+      "fighter_alpha": "MANON",
+      "fighter_tool_name": "manon",
+      "fighter_url_name": "manon",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "kimberly",
+      "fighter_alpha": "KIMBERLY",
+      "fighter_tool_name": "kimberly",
+      "fighter_url_name": "kimberly",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "marisa",
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "lily",
+      "fighter_alpha": "LILY",
+      "fighter_tool_name": "lily",
+      "fighter_url_name": "lily",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jp",
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "juri",
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "deejay",
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "cammy",
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ryu",
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "honda",
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "blanka",
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "guile",
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ken",
+      "fighter_alpha": "KEN",
+      "fighter_tool_name": "ken",
+      "fighter_url_name": "ken",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "chunli",
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "zangief",
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "dhalsim",
+      "fighter_alpha": "DHALSIM",
+      "fighter_tool_name": "dhalsim",
+      "fighter_url_name": "dhalsim",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "rashid",
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "aki",
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ed",
+      "fighter_alpha": "ED",
+      "fighter_tool_name": "ed",
+      "fighter_url_name": "ed",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "gouki",
+      "fighter_alpha": "GOUKI",
+      "fighter_tool_name": "gouki",
+      "fighter_url_name": "gouki_akuma",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "vega",
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "terry",
+      "fighter_alpha": "TERRY",
+      "fighter_tool_name": "terry",
+      "fighter_url_name": "terry",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "mai",
+      "fighter_alpha": "MAI",
+      "fighter_tool_name": "mai",
+      "fighter_url_name": "mai",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "elena",
+      "fighter_alpha": "ELENA",
+      "fighter_tool_name": "elena",
+      "fighter_url_name": "elena",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "sagat",
+      "fighter_alpha": "SAGAT",
+      "fighter_tool_name": "sagat",
+      "fighter_url_name": "sagat",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "cviper",
+      "fighter_alpha": "C.VIPER",
+      "fighter_tool_name": "cviper",
+      "fighter_url_name": "cviper",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "alex",
+      "fighter_alpha": "ALEX",
+      "fighter_tool_name": "alex",
+      "fighter_url_name": "alex",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ingrid",
+      "fighter_alpha": "INGRID",
+      "fighter_tool_name": "ingrid",
+      "fighter_url_name": "ingrid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "yasmine",
+      "fighter_alpha": "YASMINE",
+      "fighter_tool_name": "yasmine",
+      "fighter_url_name": "yasmine",
+      "current": false,
+      "exist": false
+    }
+  ],
+  "current_fighter": ""
+}

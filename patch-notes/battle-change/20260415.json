@@ -1,0 +1,417 @@
+{
+  "title": "2026.04.15 update",
+  "title_bg": "",
+  "policy": [],
+  "common": [
+    {
+      "title": "ドライブパリィ",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "攻撃を受け止めてガードストップが解けた後、ドライブラッシュを発動できないタイミングがあった現象を修正しました。"
+        }
+      ]
+    },
+    {
+      "title": "起き上がり時にドライブラッシュが重なった際の先行入力について",
+      "body": [
+        {
+          "category": "調整・不具合修正",
+          "text": "前回のアップデートで行った「起き上がり時の先行入力受付時間を3F増加」という調整の結果、<br>起き上がり時に特定のフレームで相手のドライブラッシュが重なった際に、先行入力が有効となるタイミングが想定以上に早くなっていました。<br><br>本現象への対応として、起き上がり時にドライブラッシュが重なった際の先行入力受付時間を3F削減することで、<br>先行入力が有効となるタイミングをアレックスリリース前と同様にしました。"
+        }
+      ]
+    },
+    {
+      "title": "モダン操作での特定の空中行動について",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "モダン操作にて、ジャンプ攻撃に派生できる一部の空中行動中<br>（ダルシムのヨガフロート、ラシードのウイング・ストロークなど）に相手がドライブラッシュを発動した際に、<br>暗転中にAUTO+攻撃でジャンプ攻撃（アシスト）を出そうとすると、一定時間攻撃が出せなくなってしまう不具合を修正しました。"
+        }
+      ]
+    }
+  ],
+  "fighter": [
+    {
+      "fighter_id": "JP",
+      "detail": [
+        {
+          "title": "ヴィーハト・チェーニ<br>(ヴィーハト設置中に↓↙←+強P)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "立ち中P、立ち強K、しゃがみ弱K、しゃがみ中Kからキャンセル発動した際に、それ以外の箇所からの発動よりも攻撃発生が1F早くなっていた現象を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp"
+    },
+    {
+      "fighter_id": "ベガ",
+      "detail": [
+        {
+          "title": "【通常】[サイコマイン]デビルリバース<br>(↓溜め↑+K＞P)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "2段目ガード後に相手にドライブリバーサルを発動されると、<br>爆発が起こったにも関わらずサイコマインが付与されたままの状態になることがある現象を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】デビルリバース<br>(↓溜め↑+K＞P or PP)<br>サマーソルトスカルダイバー<br>(↓溜め↑+K＞K＞P)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "特定の状況で相手の背後から攻撃がヒットしなくなってしまう現象を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison"
+    }
+  ],
+  "current_version": "20260415",
+  "versions": [
+    {
+      "id": "20260803",
+      "title": "2026.08.03 update"
+    },
+    {
+      "id": "20260528",
+      "title": "2026.05.28 update"
+    },
+    {
+      "id": "20260415",
+      "title": "2026.04.15 update"
+    },
+    {
+      "id": "20260317",
+      "title": "2026.03.17 update"
+    },
+    {
+      "id": "20251216",
+      "title": "2025.12.16 update"
+    },
+    {
+      "id": "20251113",
+      "title": "2025.11.13 update"
+    },
+    {
+      "id": "20251022",
+      "title": "2025.10.22 update"
+    },
+    {
+      "id": "20251015",
+      "title": "2025.10.15 update"
+    },
+    {
+      "id": "20250901",
+      "title": "2025.09.01 update"
+    },
+    {
+      "id": "20250805",
+      "title": "2025.08.05 update"
+    },
+    {
+      "id": "202506",
+      "title": "202506 Ver."
+    },
+    {
+      "id": "20250205",
+      "title": "2025.02.05 update"
+    },
+    {
+      "id": "20241202",
+      "title": "2024.12.02 update"
+    },
+    {
+      "id": "20240924",
+      "title": "2024.09.24 update"
+    },
+    {
+      "id": "20240626",
+      "title": "2024.06.26 update"
+    },
+    {
+      "id": "202405",
+      "title": "202405 Ver."
+    },
+    {
+      "id": "20240227",
+      "title": "2024.02.27 update"
+    },
+    {
+      "id": "20231201",
+      "title": "2023.12.01 update"
+    },
+    {
+      "id": "20230927",
+      "title": "2023.09.27 update"
+    },
+    {
+      "id": "20230808",
+      "title": "2023.08.08 update"
+    },
+    {
+      "id": "20230724",
+      "title": "2023.07.24 update"
+    }
+  ],
+  "fighter_list": [
+    {
+      "fighter_id": "luke",
+      "fighter_alpha": "LUKE",
+      "fighter_tool_name": "luke",
+      "fighter_url_name": "luke",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jamie",
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "manon",
+      "fighter_alpha": "MANON",
+      "fighter_tool_name": "manon",
+      "fighter_url_name": "manon",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "kimberly",
+      "fighter_alpha": "KIMBERLY",
+      "fighter_tool_name": "kimberly",
+      "fighter_url_name": "kimberly",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "marisa",
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "lily",
+      "fighter_alpha": "LILY",
+      "fighter_tool_name": "lily",
+      "fighter_url_name": "lily",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jp",
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "juri",
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "deejay",
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "cammy",
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ryu",
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "honda",
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "blanka",
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "guile",
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ken",
+      "fighter_alpha": "KEN",
+      "fighter_tool_name": "ken",
+      "fighter_url_name": "ken",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "chunli",
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "zangief",
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "dhalsim",
+      "fighter_alpha": "DHALSIM",
+      "fighter_tool_name": "dhalsim",
+      "fighter_url_name": "dhalsim",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "rashid",
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "aki",
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ed",
+      "fighter_alpha": "ED",
+      "fighter_tool_name": "ed",
+      "fighter_url_name": "ed",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "gouki",
+      "fighter_alpha": "GOUKI",
+      "fighter_tool_name": "gouki",
+      "fighter_url_name": "gouki_akuma",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "vega",
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "terry",
+      "fighter_alpha": "TERRY",
+      "fighter_tool_name": "terry",
+      "fighter_url_name": "terry",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "mai",
+      "fighter_alpha": "MAI",
+      "fighter_tool_name": "mai",
+      "fighter_url_name": "mai",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "elena",
+      "fighter_alpha": "ELENA",
+      "fighter_tool_name": "elena",
+      "fighter_url_name": "elena",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "sagat",
+      "fighter_alpha": "SAGAT",
+      "fighter_tool_name": "sagat",
+      "fighter_url_name": "sagat",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "cviper",
+      "fighter_alpha": "C.VIPER",
+      "fighter_tool_name": "cviper",
+      "fighter_url_name": "cviper",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "alex",
+      "fighter_alpha": "ALEX",
+      "fighter_tool_name": "alex",
+      "fighter_url_name": "alex",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ingrid",
+      "fighter_alpha": "INGRID",
+      "fighter_tool_name": "ingrid",
+      "fighter_url_name": "ingrid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "yasmine",
+      "fighter_alpha": "YASMINE",
+      "fighter_tool_name": "yasmine",
+      "fighter_url_name": "yasmine",
+      "current": false,
+      "exist": false
+    }
+  ],
+  "current_fighter": ""
+}

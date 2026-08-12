@@ -1,0 +1,7 @@
+{
+  "slug": "update20231115",
+  "url": "https://www.streetfighter.com/6/buckler/ja-jp/information/detail/update20231115",
+  "title": "アップデートのお知らせ",
+  "section": "バトル変更",
+  "html": "意図しない挙動になっていた箇所を調整しました。\n\nジェイミー\n・【OD】点辰(→↘↓↙←+KK)\nスタン中の相手にOD点辰をヒットさせてから追撃を行わなかった際に、相手のバーンアウト状態が継続してしまう不具合を修正しました。\n\n\nご協力いただき、ありがとうございました。"
+}

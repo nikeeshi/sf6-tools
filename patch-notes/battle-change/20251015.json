@@ -1,0 +1,649 @@
+{
+  "title": "2025.10.15 update",
+  "title_bg": "",
+  "policy": [],
+  "common": [
+    {
+      "title": "特定の弱攻撃が空振りした際のキャンセルドライブラッシュの挙動に関して",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "一部のキャラクターのみ、弱攻撃の特定のタイミングでキャンセルドライブラッシュを入力すると、<br>空振り時は何も発動せずに、<br>相手にヒットもしくはガードされた場合のみキャンセルドライブラッシュが発動していた現象を修正しました。<br><br>対象キャラクター・対象となる弱攻撃は下記となります。<br><br>春麗：しゃがみ弱K<br>A.K.I.：立ち弱K<br>エド：しゃがみ弱K<br>舞：立ち弱K<br>エレナ：立ち弱K<br>サガット：立ち弱K"
+        }
+      ]
+    },
+    {
+      "title": "特定の攻撃のキャンセル必殺技とキャンセルドライブラッシュの優先度に関して",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "一部の技のみ、相手にヒット/ガード時、必殺技のコマンドを入力しつつドライブパリィ入力を行うことで、<br>キャンセルドライブラッシュではなく必殺技が優先されてしまうことがある現象を修正しました。<br><br>対象キャラクター・対象となる技は下記となります。<br><br>マリーザ：しゃがみ弱P<br>A.K.I.：立ち弱K<br>豪鬼：しゃがみ弱P<br>ベガ：立ち弱P<br>エレナ：立ち弱P<br>サガット：しゃがみ弱P、タイガースラッシュ（しゃがみ中P＞しゃがみ強P）"
+        }
+      ]
+    },
+    {
+      "title": "バーンアウト中の相手に特定のSA1/SA2をヒットさせた際の挙動に関して",
+      "body": [
+        {
+          "category": "調整",
+          "text": "ヒット時に相手をロックする特定のSA1/SA2をバーンアウト中の相手にヒットさせた際に、<br>演出中も相手のドライブゲージの回復が止まらないよう変更しました。<br><br>対象キャラクター・対象となる技は下記となります。<br><br>キンバリー：SA2(空中版含む)<br>キャミィ：SA2(空中版含む)<br>マリーザ：SA1(ホールド版)、SA2(初段ヒット時)<br>本田：SA2<br>豪鬼：SA2<br>ベガ：SA2<br>エレナ：SA2<br>サガット：SA2(全方向)"
+        }
+      ]
+    },
+    {
+      "title": "特定の状況でSAゲージ回収量が減少してしまう不具合に関して",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "コンボ中に16回以上技をヒットさせた後にSAゲージ回収補正が設定されているSAをヒットさせると、<br>その後の追撃のSAゲージ回収量が減少してしまう不具合を修正しました。"
+        }
+      ]
+    }
+  ],
+  "fighter": [
+    {
+      "fighter_id": "ジェイミー",
+      "detail": [
+        {
+          "title": "【通常】流酔拳（酔いLv４）<br>(↓↘→+P)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "初段ヒット時に押し合い判定を上方向に拡大し、空中ヒット時に相手との位置を入れ替わりにくくしました。<br>※モダン操作時に相手を潜ってしまい、派生の流酔脚が暴発することがあった現象への対処となります。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie"
+    },
+    {
+      "fighter_id": "マノン",
+      "detail": [
+        {
+          "title": "ランヴェルセ（フェイント）<br>グラン・フェッテ<br>（モダン操作時）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "モダン操作時、ランヴェルセからSA3をボタン同時押し発動でキャンセルしようとすると、<br>ランヴェルセ（フェイント）やグラン・フェッテが暴発しやすくなっていた為、以下の変更を行いました。<br><br>①モダン操作時のランヴェルセ（フェイント）を、「S」長押し⇒「弱攻撃」長押しに変更しました。<br>②モダン操作時のグラン・フェッテを「いずれかの攻撃ボタン」⇒「中攻撃ボタン」に変更しました。<br>③ランヴェルセ（フェイント）の硬直終了間際の先行入力受付時間を増加しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "MANON",
+      "fighter_tool_name": "manon",
+      "fighter_url_name": "manon"
+    },
+    {
+      "fighter_id": "JP",
+      "detail": [
+        {
+          "title": "【OD】トルバラン<br>(↓↘→+KK)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "コンボ中のみヒットする攻撃判定を付与し、空中にいる相手に対して不自然に空振りしていた現象を緩和しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp"
+    },
+    {
+      "fighter_id": "ディージェイ",
+      "detail": [
+        {
+          "title": "【OD】ワニングムーン<br>（↓↙←＋KK ＞ 中K）",
+          "body": [
+            {
+              "category": "調整",
+              "text": "16F～19F間の押し合い判定を上方向に拡大しました。<br>※特定の状況でモダン操作のアシストコンボ3をヒットさせると、相手の下を潜って連続ヒットしなかった現象への対処となります。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay"
+    },
+    {
+      "fighter_id": "キャミィ",
+      "detail": [
+        {
+          "title": "【弱】スパイラルアロー<br>(↓↘→+弱K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "攻撃持続6F以降が空中ヒットした際の吹き飛び時間を増やしました。<br>※画面端から特定の距離でスイングコンビネーション＞弱スパイラルアローをヒットさせた後に、追撃に用いるキャノンスパイクが空振りしてしまう現象への対処となります。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy"
+    },
+    {
+      "fighter_id": "リュウ",
+      "detail": [
+        {
+          "title": "【OD】[電刃錬気]波掌撃<br>(↓↙←+PP)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "バーンアウト中の相手への削りダメージが意図せず高くなっていた為、<br>正常な値（ヒット時の4分の1）となる400⇒200に修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu"
+    },
+    {
+      "fighter_id": "ガイル",
+      "detail": [
+        {
+          "title": "しゃがみ弱K",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "①硬直が解けた1F後も被パニッシュカウンター判定となっていた不具合を修正しました。<br>②硬直が解ける5F前に弱Pもしくは弱Kを含めた行動（通常投げや各種必殺技等）を入力すると、連打キャンセル版の立ち弱P・しゃがみ弱P・しゃがみ弱Kが暴発してしまう不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile"
+    },
+    {
+      "fighter_id": "春麗",
+      "detail": [
+        {
+          "title": "ジャンプ中P",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "トレーニングモードにて、後方ジャンプからヒットさせた際に、キャンセルタイミングが表示されていなかった不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】天昇脚<br>(↓↓+KK)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ヒット時の押し合い判定を上方向に拡大しました。<br>②最終段の攻撃判定を手前側に拡大しました。<br>※2回目の上昇前に相手の下を潜り、攻撃が逆方向に出てしまう現象への対処となります。"
+            }
+          ]
+        },
+        {
+          "title": "【CA】蒼天乱華<br>(↓↙←↓↙←+K)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "SA3に付与されているコンボ中のみヒットする攻撃判定が、CA版に付与されていなかった不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli"
+    },
+    {
+      "fighter_id": "ザンギエフ",
+      "detail": [
+        {
+          "title": "ダブルラリアット(モダン操作)<br>(中+強)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "モダン操作時、バーンアウトしている状態で攻撃ボタンを3つ同時押した際に、<br>通常投げではなくダブルラリアットが優先して発動するように変更しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief"
+    },
+    {
+      "fighter_id": "ベガ",
+      "detail": [
+        {
+          "title": "投げ抜けの入力に関して",
+          "body": [
+            {
+              "category": "調整",
+              "text": "投げ抜け入力時に通常のベガに存在しない必殺技コマンド（← or → + PPP or KKK、→↓↘ + PP）が成立した際、投げ抜けができなくなってしまっていた不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】ヘッドプレス<br>（↓溜め↑+K ＞ K）",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "当身技（アムネジア、マリーザSA1ホールド等）に対してヘッドプレスを当てた際に、<br>跳ね返って前後移動は可能だがサマーソルトスカルダイバーは発動できないという状態になっていた為、<br>これらの当身技にヘッドプレスを当てた際は跳ね返らないように変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】サイコクラッシャーアタック<br>【通常/OD】バックフィストコンボ",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "EXTREME BATTLEにて、相手キャラクター→ギミック（爆弾など）と続けて攻撃がヒットした際に、<br>動作が中断されたりサイコマインが誘爆しない等、不自然な挙動となっていた不具合を修正しました。<br>※ONE ON ONEの通常のバトルには影響しない修正となります。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison"
+    },
+    {
+      "fighter_id": "テリー",
+      "detail": [
+        {
+          "title": "【OD】クイックバーン<br>(↓↙←+弱P中P or 弱P強P)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "SA2/3でのキャンセルタイミングを2段目の攻撃持続2F目のみに変更しました。<br>※2段目の攻撃持続1F目が届かない状態でキャンセルした際に、SAが連続ヒットしなくなってしまう現象への対処となります。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "TERRY",
+      "fighter_tool_name": "terry",
+      "fighter_url_name": "terry"
+    },
+    {
+      "fighter_id": "舞",
+      "detail": [
+        {
+          "title": "【中】[通常/強化版]龍炎舞<br>(↓↙←+中P)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "①通常/強化版の2段目のみがヒットした際に、20%の始動補正がかかっていた不具合を修正しました。<br>②通常版がコンボ中に2段目のみヒットした際に、20%のコンボ補正がかかっていた不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "MAI",
+      "fighter_tool_name": "mai",
+      "fighter_url_name": "mai"
+    },
+    {
+      "fighter_id": "エレナ",
+      "detail": [
+        {
+          "title": "スライディング<br>(↘+強K)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "空中カウンター/パニッシュカウンターした際の相手の吹き飛びが不自然な挙動になっていたのを修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】ムーングライド<br>(↓↙←+P ＞ →+P)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "初段のヒットストップとガードストップが異なる値になっていた為、ヒットストップに合わせる形で統一しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "ELENA",
+      "fighter_tool_name": "elena",
+      "fighter_url_name": "elena"
+    }
+  ],
+  "current_version": "20251015",
+  "versions": [
+    {
+      "id": "20260803",
+      "title": "2026.08.03 update"
+    },
+    {
+      "id": "20260528",
+      "title": "2026.05.28 update"
+    },
+    {
+      "id": "20260415",
+      "title": "2026.04.15 update"
+    },
+    {
+      "id": "20260317",
+      "title": "2026.03.17 update"
+    },
+    {
+      "id": "20251216",
+      "title": "2025.12.16 update"
+    },
+    {
+      "id": "20251113",
+      "title": "2025.11.13 update"
+    },
+    {
+      "id": "20251022",
+      "title": "2025.10.22 update"
+    },
+    {
+      "id": "20251015",
+      "title": "2025.10.15 update"
+    },
+    {
+      "id": "20250901",
+      "title": "2025.09.01 update"
+    },
+    {
+      "id": "20250805",
+      "title": "2025.08.05 update"
+    },
+    {
+      "id": "202506",
+      "title": "202506 Ver."
+    },
+    {
+      "id": "20250205",
+      "title": "2025.02.05 update"
+    },
+    {
+      "id": "20241202",
+      "title": "2024.12.02 update"
+    },
+    {
+      "id": "20240924",
+      "title": "2024.09.24 update"
+    },
+    {
+      "id": "20240626",
+      "title": "2024.06.26 update"
+    },
+    {
+      "id": "202405",
+      "title": "202405 Ver."
+    },
+    {
+      "id": "20240227",
+      "title": "2024.02.27 update"
+    },
+    {
+      "id": "20231201",
+      "title": "2023.12.01 update"
+    },
+    {
+      "id": "20230927",
+      "title": "2023.09.27 update"
+    },
+    {
+      "id": "20230808",
+      "title": "2023.08.08 update"
+    },
+    {
+      "id": "20230724",
+      "title": "2023.07.24 update"
+    }
+  ],
+  "fighter_list": [
+    {
+      "fighter_id": "luke",
+      "fighter_alpha": "LUKE",
+      "fighter_tool_name": "luke",
+      "fighter_url_name": "luke",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jamie",
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "manon",
+      "fighter_alpha": "MANON",
+      "fighter_tool_name": "manon",
+      "fighter_url_name": "manon",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "kimberly",
+      "fighter_alpha": "KIMBERLY",
+      "fighter_tool_name": "kimberly",
+      "fighter_url_name": "kimberly",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "marisa",
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "lily",
+      "fighter_alpha": "LILY",
+      "fighter_tool_name": "lily",
+      "fighter_url_name": "lily",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jp",
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "juri",
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "deejay",
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "cammy",
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ryu",
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "honda",
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "blanka",
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "guile",
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ken",
+      "fighter_alpha": "KEN",
+      "fighter_tool_name": "ken",
+      "fighter_url_name": "ken",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "chunli",
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "zangief",
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "dhalsim",
+      "fighter_alpha": "DHALSIM",
+      "fighter_tool_name": "dhalsim",
+      "fighter_url_name": "dhalsim",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "rashid",
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "aki",
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ed",
+      "fighter_alpha": "ED",
+      "fighter_tool_name": "ed",
+      "fighter_url_name": "ed",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "gouki",
+      "fighter_alpha": "GOUKI",
+      "fighter_tool_name": "gouki",
+      "fighter_url_name": "gouki_akuma",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "vega",
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "terry",
+      "fighter_alpha": "TERRY",
+      "fighter_tool_name": "terry",
+      "fighter_url_name": "terry",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "mai",
+      "fighter_alpha": "MAI",
+      "fighter_tool_name": "mai",
+      "fighter_url_name": "mai",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "elena",
+      "fighter_alpha": "ELENA",
+      "fighter_tool_name": "elena",
+      "fighter_url_name": "elena",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "sagat",
+      "fighter_alpha": "SAGAT",
+      "fighter_tool_name": "sagat",
+      "fighter_url_name": "sagat",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "cviper",
+      "fighter_alpha": "C.VIPER",
+      "fighter_tool_name": "cviper",
+      "fighter_url_name": "cviper",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "alex",
+      "fighter_alpha": "ALEX",
+      "fighter_tool_name": "alex",
+      "fighter_url_name": "alex",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ingrid",
+      "fighter_alpha": "INGRID",
+      "fighter_tool_name": "ingrid",
+      "fighter_url_name": "ingrid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "yasmine",
+      "fighter_alpha": "YASMINE",
+      "fighter_tool_name": "yasmine",
+      "fighter_url_name": "yasmine",
+      "current": false,
+      "exist": false
+    }
+  ],
+  "current_fighter": ""
+}

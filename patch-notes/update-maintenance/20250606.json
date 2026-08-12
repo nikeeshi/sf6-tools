@@ -1,0 +1,7 @@
+{
+  "slug": "update20250606",
+  "url": "https://www.streetfighter.com/6/buckler/ja-jp/information/detail/update20250606",
+  "title": "アップデートのお知らせ",
+  "section": "バトル変更",
+  "html": "<strong>■マリーザ</strong>\n<ul class=\"article_list\"><li>弱ディマカイルス（↓ ↙ ← + 弱P）<br>\n2段目がSAでキャンセルできてしまう不具合を修正しました。</li></ul>\n<strong>■テリー</strong>\n<ul class=\"article_list\"><li>パワードライブ（中P ⇒ 強P）<br>\nヒット/ガード時の硬直差が変化してしまっていたため、パワードライブの硬直を1F減少させて硬直差を以前と同じ状態になるように修正しました。</li></ul>\n<strong>■ザンギエフ</strong>\n<ul class=\"article_list\"><li>OD版ロシアンスープレックス（近距離で→ ↘ ↓ ↙ ← + KK）<br>\nダメージが3200⇒2600に減少してしまっていた不具合を修正しました。</li></ul>\n<strong>■キャミィ</strong>\n<ul class=\"article_list\"><li>スイングコンビネーション（立ち強P ⇒ 立ち強K）<br>\n画面端でヒットさせた際に、SA2が連続ヒットしなくなっていたため、SAのキャンセルタイミングが以前の状態と同じになるように修正しました。</li></ul>\n<strong>■ラシード</strong>\n<ul class=\"article_list\"><li>アラビアン・スカイハイ（前ジャンプ中に↓ ↙ ← + K）<br>\nOD版の攻撃判定を拡大した際、意図せず通常版も拡大されてしまっていたため通常版の攻撃判定は以前の状態と同じになるように修正しました。</li></ul>\n<strong>■ベガ</strong>\n<ul class=\"article_list\"><li>弱サイコクラッシャーアタック（←溜め → + 弱P）<br>\nサイコマイン付与中の相手に特定のタイミングでヒットさせた際、サイコマインが2回爆発してしまう不具合を修正しました。</li></ul>\n\n本修正に合わせて下記も更新しております。\n<a class=\"info__linkOk\" href=\"../../battle_change\">バトル変更リスト(2025.06.04)</a>\n\n【リプレイに関するご注意】\nバトルバージョンは変わりませんが、調整箇所の技を使用した場合に、リプレイが正常に機能しないことがあります。"
+}

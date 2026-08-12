@@ -1,0 +1,769 @@
+{
+  "title": "2025.12.16 update",
+  "title_bg": "",
+  "policy": [
+    {
+      "title": "全体コンセプト",
+      "text": "今回のアップデートは舞・エレナ・サガットの3キャラクターをメインとした調整となります。<br><br>前回の全体調整以後にプレイアブルとなったエレナ・サガットに関しては、キャラクターの個性となる主要技の一部がコンセプトを発揮しにくくなっている現状を鑑みて、使い勝手を改善する調整を行いました。<br>コンボや連係の幅が増え、それぞれの持つ強みや個性がより強く表現できるように手を入れています。<br><br>舞は以前のアップデートで相手の行動を強く制限する技の下方修正を行ったものの、依然として各種花蝶扇を用いた連係は場の主導権を握りやすく、特に相手を端に追い詰めた際の連係は全キャラクター中でも屈指の強さになっていました。<br>これらの連係は要所でジャストパリィや無敵技等、ハイリスクかつ高難度な行動を成功させなければ状況が好転しづらく、対処が難しくなりすぎていたと思われる為、再度技性能に見直しをかけました。<br><br>今回の調整では対応難易度やループ性を抑えることを目的とし、ジャストパリィを成功させずともガード・ノーマルパリィでバーンアウトを誘発しづらくしつつ、画面端での前投げ後の状況を変更することで、守勢時に舞の攻めを凌ぎやすくなるようにしています。<br><br>調整内容の詳細に関しては、キャラクター別の調整リストをご確認ください。"
+    },
+    {
+      "title": "mai",
+      "text": "舞は連係に使われる技でのドライブゲージの増減量の見直しと、<br>画面端での前投げ後の状況の変化が主な調整点となります。<br><br>ドライブゲージ関連の調整は立ち強Pと各種花蝶扇が対象となります。<br>連係の起点や中継に使われやすく、相手にガードさせる機会が多い立ち強Pはガード時のドライブゲージ減少量を下げています。<br><br>各種花蝶扇はジャスト/ノーマルパリィ時のドライブゲージ回復量を増やす調整を行いました。<br>ジャストパリィ成功時もパリィ発動時のコストと差し引きでマイナスになる状況を減らし、<br>ノーマルパリィでもある程度の回復量を担保することで、バーンアウトを誘発しづらくしました。<br>特に相手を拘束する力が強い【弱】花蝶扇（ホールド版）や、<br>焔ストック所持時の【通常】花蝶扇は1～2段をノーマルパリィで受けた際にドライブゲージが増加するようになっているので、<br>飛び道具に対抗する手段が少ないキャラクターでもパリィで凌ぎやすくなっています。<br><br>画面端での前投げヒット後は相手との距離が近くなっており<br>ヒット後に前方ステップ＞後退という連係を行っても、起き上がった相手の通常投げを避けられなくなっています。<br>前方ステップ後の有利フレームに変化は無いものの、<br>相手の通常投げ（投げ抜け）と無敵技の両方をケアしづらくなっているので、今までより攻め方を工夫する必要があります。"
+    },
+    {
+      "title": "elena",
+      "text": "エレナはレオパードスナップ（強化版）と、【SA1】ミーティアボレーが主な調整箇所となっています。<br>その他の技に関しては攻撃途中の空振りを防ぐ等、若干の利便性の向上となります。<br><br>・レオパードスナップ（強化版）<br>中央・画面端共にガードされた後の相手との距離が近くなり、攻めを組み立てやすくなっています。<br>中央ではガードしている相手にもしゃがみ弱P or 弱K＞しゃがみ弱P等の弱攻撃を2発刻む連係が届くようになった為、<br>通常投げを後退で避けようとしたり、弱攻撃で暴れたりする相手にもプレッシャーをかけやすくなりました。<br><br>・ミーティアボレー<br>攻撃発生が早くなって対空技としての性能が上がり、空中コンボの追撃パーツとしても組み込みやすくなりました。<br>その他にもヒット後の追撃でSAゲージが増加するようになる等、全体的な使い勝手を良くしています。"
+    },
+    {
+      "title": "sagat",
+      "text": "サガットはタイガーネクサスとそこからの派生技、下段攻撃周りの性能を上方修正しました。<br>それ以外の箇所は特定の状況で多段技が途中からヒットしない、ロック判定が伴わない等、<br>レアケースながらも不利益を被りやすいシーンを防ぐ調整となります。<br><br>・弱/中タイガーネクサス、タイガーマイト<br>弱/中版のタイガーネクサスは前進距離の増加からリーチが伸びています。<br>しゃがみ弱Kのヒット/ガードバック調整も合わせて弱攻撃を刻んだ後も相手に届きやすくなり、<br>コンボや連係に組み込みやすくなりました。<br><br>タイガーネクサス・タイガーマイトの空中ヒット時の吹き飛びの変更は、<br>既存の空中コンボに影響が出ないようにする為の調整となります。<br><br>・しゃがみ弱K、しゃがみ中K<br>近～中距離での下段攻撃の性能を上げています。<br>前進速度が遅いゆえに下がる相手を追いづらく、<br>後退にリスクを負わせるのが難しかったサガットの弱点をある程度カバーする形としました。<br><br>・タイガ－モノリス<br>早出しの対空技として用いた際に攻撃持続が無い箇所があった為、<br>相手のジャンプ攻撃とそのタイミングがかち合うと、<br>本来勝っていたはずの状況で一方負けや相打ちが発生してしまう現象を防ぐ調整となります。"
+    }
+  ],
+  "common": [
+    {
+      "title": "ドライブゲージの残量による見た目の変更",
+      "body": [
+        {
+          "category": "共通調整",
+          "text": "ブロックごとのドライブゲージの有無が判別しやすくなるように、<br>ドライブゲージがブロック内に僅かでも残っている際は該当するブロックの色合いが変化するようにしました。"
+        }
+      ]
+    },
+    {
+      "title": "全てのキャラクターのしゃがみ弱キック",
+      "body": [
+        {
+          "category": "共通調整",
+          "text": "攻撃判定発生前に発生する足部分のやられ判定を、めくり攻撃に対して無敵にしました。<br>（相手のめくりジャンプ攻撃に対して、着地寸前を背後から攻撃する際などに影響します）"
+        }
+      ]
+    },
+    {
+      "title": "マノン・リリー・ザンギエフのSA3/CA",
+      "body": [
+        {
+          "category": "共通調整",
+          "text": "投げ判定が発生する前に設定されていた、不要なガード待機判定を削除しました。<br>※これによりジャンプの着地にSAを合わせた際に、本来回避不能なはずのタイミングで避けられてしまう現象が発生していました。"
+        }
+      ]
+    },
+    {
+      "title": "飛び道具の相殺判定について",
+      "body": [
+        {
+          "category": "不具合修正",
+          "text": "多段ヒットする飛び道具同士が相殺した際に攻撃判定の消失するタイミングがずれる事があり、同じ状況で相殺しても結果が一定ではなくなってしまう不具合を修正しました。"
+        }
+      ]
+    }
+  ],
+  "fighter": [
+    {
+      "fighter_id": "ディージェイ",
+      "detail": [
+        {
+          "title": "マラカスビート<br>(↓↓+PP)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "SAゲージが1.98～2本未満の状態でSAゲージ2本版が発動していた不具合を、2本以上で発動するように修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay"
+    },
+    {
+      "fighter_id": "キャミィ",
+      "detail": [
+        {
+          "title": "立ち弱K",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "背後にいる相手に攻撃が当たってしまうことがある現象を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy"
+    },
+    {
+      "fighter_id": "春麗",
+      "detail": [
+        {
+          "title": "蘭華・前突・仙風<br>(行雲流水中に弱P or 弱K or 中K)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "相手に攻撃をジャストパリィされた際に、硬直が解けるまでの間にガード可能なフレームが存在してしまっていた現象を修正しました。<br>※この修正によりジャストパリィされた際のみ技の全体フレームが短くなりますが、仕様となります。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli"
+    },
+    {
+      "fighter_id": "ダルシム",
+      "detail": [
+        {
+          "title": "【CA】ヨガマーシレス<br>(↓↘→↓↘→+K)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "キャンセル発動時に下記のパラメータがSA3相当になっていた為、CAの値に修正しました。<br>①ガード時のドライブゲージの減少量を7500⇒10000に修正しました。<br>②バーンアウト中の相手への削りダメージを1000⇒1250に修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "DHALSIM",
+      "fighter_tool_name": "dhalsim",
+      "fighter_url_name": "dhalsim"
+    },
+    {
+      "fighter_id": "ベガ",
+      "detail": [
+        {
+          "title": "【OD】[サイコマイン]サイコクラッシャーアタック",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "初段の攻撃持続2F目以降のヒットストップをベガ側のみ1F削減し、特定の距離・タイミングで攻撃を当てた際に、サイコマインの自動爆発直後であるにも関わらずOD版サイコクラッシャーアタックによる爆破が発生していた現象を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison"
+    },
+    {
+      "fighter_id": "舞",
+      "detail": [
+        {
+          "title": "立ち強P",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ガード時のドライブゲージの減少量を5000⇒4000に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "立ち弱K",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "攻撃判定発生前に発生する足部分のやられ判定を、めくり攻撃に対して無敵にしました。<br>（相手のめくりジャンプ攻撃に対して、着地寸前を背後から攻撃する際などに影響します）"
+            }
+          ]
+        },
+        {
+          "title": "【通常】花蝶扇（ホールド）<br>(↓↘→+Pホールド)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ドライブパリィした際のドライブゲージ増加量を2500・2500⇒5000・2500に変更しました。<br>②ジャストパリィした際のドライブゲージ増加量を2500・2500⇒5000・5000に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】花蝶扇（ホールド）<br>(↓↘→+PPホールド)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ドライブパリィ/ジャストパリィした際のドライブゲージ増加量を1400×2⇒2500×2に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "乱れ花蝶扇<br>(↓↘→+PPホールド ＞ →+P)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①1～2段目をジャストパリィした際のドライブゲージ増加量を1200×2⇒2500×2に変更しました。<br>②3～4段目（落下部分）をジャストパリィした際のドライブゲージ増加量を1150×2⇒5000×2に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】[陽炎の舞]花蝶扇<br>(↓↘→+P)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ドライブパリィ/ジャストパリィした際のドライブゲージ増加量を2500×2⇒3000×2に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】[陽炎の舞]花蝶扇（ホールド）<br>(↓↘→+Pホールド)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ドライブパリィした際のドライブゲージ増加量を1250×2・2500⇒2500×3に変更しました。<br>②ジャストパリィした際のドライブゲージ増加量を1250×2・2500⇒2500×2・5000に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】[陽炎の舞]花蝶扇（ホールド）<br>(↓↘→+PPホールド)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①1～2段目をドライブパリィ/ジャストパリィした際のドライブゲージ増加量を1200×2⇒2500×2に変更しました。<br>②3～4段目（落下部分）をジャストパリィした際のドライブゲージ増加量を750×2⇒2500×2に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "[陽炎の舞]乱れ花蝶扇<br>(↓↘→+PPホールド ＞ →+P)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①1～2段目をジャストパリィした際のドライブゲージ増加量を1050×2⇒2500×2に変更しました。<br>②3～4段目（落下部分）をジャストパリィした際のドライブゲージ増加量を750×2⇒2500×2に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】[通常/強化版]必殺忍蜂<br>(↓↘→+K)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "相手が画面端にいる状態で技の硬直中に攻撃を受けると、<br>画面中央より相手との距離が近くなってしまうことがある現象を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "前投げ",
+          "body": [
+            {
+              "category": "調整",
+              "text": "画面端でヒットさせた後の距離を近くしました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "MAI",
+      "fighter_tool_name": "mai",
+      "fighter_url_name": "mai"
+    },
+    {
+      "fighter_id": "エレナ",
+      "detail": [
+        {
+          "title": "レオパードスナップ（通常版）<br>(↓↘→+P ＞ →+弱K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "SAゲージ増加量を600⇒1000に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "レオパードスナップ（強化版）<br>(↓↘→+P ＞ →+P ＞ →+弱K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①画面端の相手にガードさせた後の距離が画面中央よりも遠くなっていたのを、画面中央に合わせる形で近くしました。<br>②ガードバックを縮小しました。<br>③初段の空中ヒット時の吹き飛びを低くし、2段目が空振りにくくしました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常】ムーングライド（派生部分）<br>(↓↙←+P ＞ →+P)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "派生部分の2段目の攻撃判定を前方に拡大し、2段目が空振りにくくしました。"
+            }
+          ]
+        },
+        {
+          "title": "【OD】ムーングライド<br>(↓↙←+PP)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ヒットバックを縮小しました。<br>②後退後の前進距離を増加しました。"
+            }
+          ]
+        },
+        {
+          "title": "【SA1】ミーティアボレー<br>（↓↘→↓↘→＋K）",
+          "body": [
+            {
+              "category": "調整・不具合修正",
+              "text": "①攻撃発生を9F⇒7Fに変更しました。<br>②ヒット後の追撃でSAゲージが増加するようにしました。<br>③空振り時の落下中に攻撃を受けた際に、空中復帰になってしまうタイミングがあったのを吹き飛びダウンになるよう修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "ELENA",
+      "fighter_tool_name": "elena",
+      "fighter_url_name": "elena"
+    },
+    {
+      "fighter_id": "サガット",
+      "detail": [
+        {
+          "title": "しゃがみ弱K",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ヒットバック/ガードバックを縮小しました。"
+            }
+          ]
+        },
+        {
+          "title": "しゃがみ中K",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ヒット時の硬直差を+4F⇒+5Fに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "タイガーモノリス<br>(←+強P)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "初段の攻撃持続を2F⇒3Fに変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "【強】タイガーアッパーカット（ホールド）<br>(→↓↘+強Pホールド)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①攻撃持続3F目ヒット時に1～2F目と同様にロック演出へ移行するようにしました。<br>②攻撃持続3F目のダメージを1700⇒1800に変更しました。<br>③攻撃持続3F目ヒット時のヒットストップを13F⇒20Fに変更しました。<br>④攻撃持続3F目ヒット時のみ、SA3/CAキャンセル可能に変更しました。<br>⑤攻撃持続3F目にコンボ中のみヒットする攻撃判定を付与しました。<br>⑥攻撃持続1～2F間の押し合い判定を上方向に拡大し、高い位置の相手を潜りにくくしました。"
+            }
+          ]
+        },
+        {
+          "title": "【強】タイガーニークラッシュ<br>(↓↘→+強K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "2段目のコンボ中のみヒットする攻撃判定を上方向に拡大し、初段空中ヒット時にきりもみやられにならなかった際、2段目が空振りしてしまう現象を緩和しました。"
+            }
+          ]
+        },
+        {
+          "title": "【弱・中】タイガーネクサス<br>(↓↙←+弱K or 中K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ヒットバックを増加しました。<br>②攻撃発生2F前から攻撃発生までの前進量を増加しました。<br>③空中ヒット時の横への吹き飛びを増加しました。<br>④頭部分の押し合い判定を後方に縮小しました。"
+            }
+          ]
+        },
+        {
+          "title": "タイガーマイト<br>(↓↙←+K ＞ →+弱K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "①ヒットバックを縮小しました。<br>②空中ヒット時の横への吹き飛びを増加しました。"
+            }
+          ]
+        },
+        {
+          "title": "タイガーグリード<br>(↓↙←+K ＞ →+中K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ガード時のドライブゲージの減少量を6000⇒8000に変更しました。"
+            }
+          ]
+        },
+        {
+          "title": "タイガーノヴァ<br>(↓↙←+K ＞ →+強K)",
+          "body": [
+            {
+              "category": "調整",
+              "text": "ガードバックを縮小しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "SAGAT",
+      "fighter_tool_name": "sagat",
+      "fighter_url_name": "sagat"
+    },
+    {
+      "fighter_id": "C.ヴァイパー",
+      "detail": [
+        {
+          "title": "ダイナミック操作",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "①キャンセルハイジャンプからOD版セービングフォースを発動しようとすると、通常版が発動していた不具合を修正しました。<br>②SA1発動中かつバーンアウト中に、ハイジャンプキャンセルで「下要素＞↖」と入力しても、垂直ハイジャンプが発動しなかった不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "ジャンプ弱P・ジャンプ強P",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "しゃがんだ相手にヒットしても立ちやられ状態になってしまう不具合を修正しました。"
+            }
+          ]
+        },
+        {
+          "title": "【通常/OD】セービングフォース（Lv3）<br>(↓↙←+K or KKホールド)",
+          "body": [
+            {
+              "category": "不具合修正",
+              "text": "パニッシュカウンター時に相手のやられ時間が増加していなかった不具合を修正しました。"
+            }
+          ]
+        }
+      ],
+      "fighter_alpha": "C.VIPER",
+      "fighter_tool_name": "cviper",
+      "fighter_url_name": "cviper"
+    }
+  ],
+  "current_version": "20251216",
+  "versions": [
+    {
+      "id": "20260803",
+      "title": "2026.08.03 update"
+    },
+    {
+      "id": "20260528",
+      "title": "2026.05.28 update"
+    },
+    {
+      "id": "20260415",
+      "title": "2026.04.15 update"
+    },
+    {
+      "id": "20260317",
+      "title": "2026.03.17 update"
+    },
+    {
+      "id": "20251216",
+      "title": "2025.12.16 update"
+    },
+    {
+      "id": "20251113",
+      "title": "2025.11.13 update"
+    },
+    {
+      "id": "20251022",
+      "title": "2025.10.22 update"
+    },
+    {
+      "id": "20251015",
+      "title": "2025.10.15 update"
+    },
+    {
+      "id": "20250901",
+      "title": "2025.09.01 update"
+    },
+    {
+      "id": "20250805",
+      "title": "2025.08.05 update"
+    },
+    {
+      "id": "202506",
+      "title": "202506 Ver."
+    },
+    {
+      "id": "20250205",
+      "title": "2025.02.05 update"
+    },
+    {
+      "id": "20241202",
+      "title": "2024.12.02 update"
+    },
+    {
+      "id": "20240924",
+      "title": "2024.09.24 update"
+    },
+    {
+      "id": "20240626",
+      "title": "2024.06.26 update"
+    },
+    {
+      "id": "202405",
+      "title": "202405 Ver."
+    },
+    {
+      "id": "20240227",
+      "title": "2024.02.27 update"
+    },
+    {
+      "id": "20231201",
+      "title": "2023.12.01 update"
+    },
+    {
+      "id": "20230927",
+      "title": "2023.09.27 update"
+    },
+    {
+      "id": "20230808",
+      "title": "2023.08.08 update"
+    },
+    {
+      "id": "20230724",
+      "title": "2023.07.24 update"
+    }
+  ],
+  "fighter_list": [
+    {
+      "fighter_id": "luke",
+      "fighter_alpha": "LUKE",
+      "fighter_tool_name": "luke",
+      "fighter_url_name": "luke",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jamie",
+      "fighter_alpha": "JAMIE",
+      "fighter_tool_name": "jamie",
+      "fighter_url_name": "jamie",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "manon",
+      "fighter_alpha": "MANON",
+      "fighter_tool_name": "manon",
+      "fighter_url_name": "manon",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "kimberly",
+      "fighter_alpha": "KIMBERLY",
+      "fighter_tool_name": "kimberly",
+      "fighter_url_name": "kimberly",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "marisa",
+      "fighter_alpha": "MARISA",
+      "fighter_tool_name": "marisa",
+      "fighter_url_name": "marisa",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "lily",
+      "fighter_alpha": "LILY",
+      "fighter_tool_name": "lily",
+      "fighter_url_name": "lily",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "jp",
+      "fighter_alpha": "JP",
+      "fighter_tool_name": "jp",
+      "fighter_url_name": "jp",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "juri",
+      "fighter_alpha": "JURI",
+      "fighter_tool_name": "juri",
+      "fighter_url_name": "juri",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "deejay",
+      "fighter_alpha": "DEE JAY",
+      "fighter_tool_name": "deejay",
+      "fighter_url_name": "deejay",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "cammy",
+      "fighter_alpha": "CAMMY",
+      "fighter_tool_name": "cammy",
+      "fighter_url_name": "cammy",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "ryu",
+      "fighter_alpha": "RYU",
+      "fighter_tool_name": "ryu",
+      "fighter_url_name": "ryu",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "honda",
+      "fighter_alpha": "E.HONDA",
+      "fighter_tool_name": "honda",
+      "fighter_url_name": "honda",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "blanka",
+      "fighter_alpha": "BLANKA",
+      "fighter_tool_name": "blanka",
+      "fighter_url_name": "blanka",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "guile",
+      "fighter_alpha": "GUILE",
+      "fighter_tool_name": "guile",
+      "fighter_url_name": "guile",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ken",
+      "fighter_alpha": "KEN",
+      "fighter_tool_name": "ken",
+      "fighter_url_name": "ken",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "chunli",
+      "fighter_alpha": "CHUN-LI",
+      "fighter_tool_name": "chunli",
+      "fighter_url_name": "chunli",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "zangief",
+      "fighter_alpha": "ZANGIEF",
+      "fighter_tool_name": "zangief",
+      "fighter_url_name": "zangief",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "dhalsim",
+      "fighter_alpha": "DHALSIM",
+      "fighter_tool_name": "dhalsim",
+      "fighter_url_name": "dhalsim",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "rashid",
+      "fighter_alpha": "RASHID",
+      "fighter_tool_name": "rashid",
+      "fighter_url_name": "rashid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "aki",
+      "fighter_alpha": "A.K.I.",
+      "fighter_tool_name": "aki",
+      "fighter_url_name": "aki",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ed",
+      "fighter_alpha": "ED",
+      "fighter_tool_name": "ed",
+      "fighter_url_name": "ed",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "gouki",
+      "fighter_alpha": "GOUKI",
+      "fighter_tool_name": "gouki",
+      "fighter_url_name": "gouki_akuma",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "vega",
+      "fighter_alpha": "VEGA",
+      "fighter_tool_name": "vega",
+      "fighter_url_name": "vega_mbison",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "terry",
+      "fighter_alpha": "TERRY",
+      "fighter_tool_name": "terry",
+      "fighter_url_name": "terry",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "mai",
+      "fighter_alpha": "MAI",
+      "fighter_tool_name": "mai",
+      "fighter_url_name": "mai",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "elena",
+      "fighter_alpha": "ELENA",
+      "fighter_tool_name": "elena",
+      "fighter_url_name": "elena",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "sagat",
+      "fighter_alpha": "SAGAT",
+      "fighter_tool_name": "sagat",
+      "fighter_url_name": "sagat",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "cviper",
+      "fighter_alpha": "C.VIPER",
+      "fighter_tool_name": "cviper",
+      "fighter_url_name": "cviper",
+      "current": false,
+      "exist": true
+    },
+    {
+      "fighter_id": "alex",
+      "fighter_alpha": "ALEX",
+      "fighter_tool_name": "alex",
+      "fighter_url_name": "alex",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "ingrid",
+      "fighter_alpha": "INGRID",
+      "fighter_tool_name": "ingrid",
+      "fighter_url_name": "ingrid",
+      "current": false,
+      "exist": false
+    },
+    {
+      "fighter_id": "yasmine",
+      "fighter_alpha": "YASMINE",
+      "fighter_tool_name": "yasmine",
+      "fighter_url_name": "yasmine",
+      "current": false,
+      "exist": false
+    }
+  ],
+  "current_fighter": ""
+}
