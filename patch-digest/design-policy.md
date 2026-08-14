@@ -63,3 +63,8 @@ JPのアブニマーチは、ロック演出中に動けてしまう不具合の
 
 - [2023.09.27](../patch-notes/battle-change/20230927.md#L139) RYU「鎖骨割り」
 - [2023.09.27](../patch-notes/battle-change/20230927.md#L198) CHUN-LI「蓮掌」
+
+この2件も次の版で解消した。あわせてブランカのロッククラッシュにも同じ整理が入っている。予告が果たされたのはこれで2回目。
+
+- [2023.12.01](../patch-notes/battle-change/20231201.md#L54) RYU「鎖骨割り」
+- [2023.12.01](../patch-notes/battle-change/20231201.md#L90) CHUN-LI「蓮掌」

@@ -29,6 +29,10 @@
 
 バトル変更リストの `category`(調整 / 不具合修正)は初期の版では空になっている。その場合は本文の文言から読む。
 
+パッチノートに書かれていない知識を補うときは、行頭に **補足:** を付けて出典を持たないことを示す。
+
+全体則として書けるのは、全ファイター共通の項に書かれているか、複数キャラで同じ記述が出た場合だけ。単一キャラの記述からはその技の話として書く。
+
 ## 読んだ版
 
 日付順。全32件。
@@ -37,9 +41,9 @@
 - [x] 2023.07.25 [update-maintenance/20230725](../patch-notes/update-maintenance/20230725.json)
 - [x] 2023.08.08 [battle-change/20230808](../patch-notes/battle-change/20230808.md)
 - [x] 2023.09.27 [battle-change/20230927](../patch-notes/battle-change/20230927.md)
-- [ ] 2023.11.01 update-maintenance/20231101
-- [ ] 2023.11.15 update-maintenance/20231115
-- [ ] 2023.12.01 battle-change/20231201
+- [x] 2023.11.01 [update-maintenance/20231101](../patch-notes/update-maintenance/20231101.json)
+- [x] 2023.11.15 [update-maintenance/20231115](../patch-notes/update-maintenance/20231115.json)
+- [x] 2023.12.01 [battle-change/20231201](../patch-notes/battle-change/20231201.md)
 - [ ] 2024.01.09 update-maintenance/20240109
 - [ ] 2024.02.27 battle-change/20240227
 - [ ] 2024.05 battle-change/202405
