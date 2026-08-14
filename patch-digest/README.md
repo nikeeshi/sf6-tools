@@ -19,6 +19,12 @@
 | [design-policy.md](design-policy.md) | 調整の方針として原文に明言されているもの                                      |
 | [moves/](moves/)                     | キャラ別・技別の変更履歴。ファイル名は move-db の `raw-frame-tsv/` に合わせる |
 
+1版読み終えるごとに検証する。出典リンクが実在する項目を指しているか、原文の項目を拾い残していないかを見る。読み終えた版は下のチェックリストの `[x]` から読み取るので、印を付けてから走らせる。
+
+```bash
+node patch-digest/tools/verify-digest.mjs
+```
+
 ## 出典の書き方
 
 各項目の行頭に版の日付を置き、その日付を原文へのリンクにする。リンク先は [battle-change](../patch-notes/battle-change/) の `.md` で、`#L` で該当行を指す。原文の表は1行が1項目なので、行番号がそのまま項目を指す。リンクの後ろにはキャラ名と変更箇所を添える。
@@ -33,6 +39,8 @@
 
 全体則として書けるのは、全ファイター共通の項に書かれているか、複数キャラで同じ記述が出た場合だけ。単一キャラの記述からはその技の話として書く。
 
+モダン操作でのみ起きる話は、出典の直後に **(M)** を付ける。原文がSPボタン・アシストボタン・AUTOに言及していればモダンの話。1つの項目にモダン限定とそうでない話が混ざっている場合は `(M)` を付けず、本文側でどちらの話か書き分ける。
+
 ## 読んだ版
 
 日付順。全32件。
@@ -44,8 +52,8 @@
 - [x] 2023.11.01 [update-maintenance/20231101](../patch-notes/update-maintenance/20231101.json)
 - [x] 2023.11.15 [update-maintenance/20231115](../patch-notes/update-maintenance/20231115.json)
 - [x] 2023.12.01 [battle-change/20231201](../patch-notes/battle-change/20231201.md)
-- [ ] 2024.01.09 update-maintenance/20240109
-- [ ] 2024.02.27 battle-change/20240227
+- [x] 2024.01.09 [update-maintenance/20240109](../patch-notes/update-maintenance/20240109.json)
+- [x] 2024.02.27 [battle-change/20240227](../patch-notes/battle-change/20240227.md)
 - [ ] 2024.05 battle-change/202405
 - [ ] 2024.06.26 battle-change/20240626
 - [ ] 2024.08.01 update-maintenance/20240801
