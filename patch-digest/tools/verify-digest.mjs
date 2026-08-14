@@ -66,7 +66,8 @@ const referenced = {};
 
 for (const file of collectMarkdown(digestDir)) {
   const text = readFileSync(file, "utf8");
-  for (const match of text.matchAll(/(\d{8})\.md#L(\d+)/g)) {
+  // 版IDは8桁(20230724)と6桁(202405)の両方がある。
+  for (const match of text.matchAll(/(\d{6,8})\.md#L(\d+)/g)) {
     total += 1;
     const lines = source[match[1]];
     if (!lines) {

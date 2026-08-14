@@ -15,6 +15,7 @@
 | [terms.md](terms.md)                 | 公式用語。説明が要る語だけ本文を付け、それ以外は初出の記録だけ残す            |
 | [input-buffer.md](input-buffer.md)   | 先行入力。状況別に猶予が設定されているので独立させている                      |
 | [input-hold.md](input-hold.md)       | 入力保持フレーム。コマンドが崩れるまでの猶予で、先行入力とは別概念            |
+| [combo-count.md](combo-count.md)     | コンボカウント。パッチノートにしか記述が無い内部値                            |
 | [system.md](system.md)               | システムの挙動と、不具合修正の裏返しとして読み取れる不変条件                  |
 | [design-policy.md](design-policy.md) | 調整の方針として原文に明言されているもの                                      |
 | [moves/](moves/)                     | キャラ別・技別の変更履歴。ファイル名は move-db の `raw-frame-tsv/` に合わせる |
@@ -54,7 +55,7 @@ node patch-digest/tools/verify-digest.mjs
 - [x] 2023.12.01 [battle-change/20231201](../patch-notes/battle-change/20231201.md)
 - [x] 2024.01.09 [update-maintenance/20240109](../patch-notes/update-maintenance/20240109.json)
 - [x] 2024.02.27 [battle-change/20240227](../patch-notes/battle-change/20240227.md)
-- [ ] 2024.05 battle-change/202405
+- [x] 2024.05 [battle-change/202405](../patch-notes/battle-change/202405.md)
 - [ ] 2024.06.26 battle-change/20240626
 - [ ] 2024.08.01 update-maintenance/20240801
 - [ ] 2024.09.24 battle-change/20240924
