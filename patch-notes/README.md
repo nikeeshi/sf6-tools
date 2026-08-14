@@ -24,6 +24,26 @@
 
 取得手順: ページのHTMLを取り、`__NEXT_DATA__` から `adjust` ノードを抜いてそのまま書き出す。全版のIDは、最新版ページの `adjust.versions` に一覧で入っている。既定のUser-Agentでは403で弾かれるため、ブラウザのものを送る必要がある。
 
+### 同名の .md
+
+`<id>.md` は `<id>.json` を [tools/battle-change-to-md.mjs](tools/battle-change-to-md.mjs) で機械変換した読む用のファイル。原文はJSON側で、mdは作り直せる。パッチノートは基本的に最新の版しか書き換わらないので、新しい版を取ったらその版だけ流せばよい。
+
+```bash
+node tools/battle-change-to-md.mjs battle-change/*.json
+```
+
+生成直後は表の桁が揃っていない。整形はコミット時のprettierに任せる。
+
+変換の規則。
+
+- `policy` の `title` は `fighter_tool_name`。該当するキャラの節の `### 調整方針` に置く。それ以外は `## 調整方針` の下の `### 全体コンセプト` にまとめ、`policy` が空の版では `## 調整方針` を出さない。
+- `common` は `## 全ファイター共通`、`fighter` は `## <fighter_alpha>`。並びはJSONのまま。
+- 変更項目は 変更箇所 / カテゴリ / 調整内容 の3列の表。1つの変更箇所が複数の項目を持つ場合は、変更箇所を繰り返して行を分ける。
+- 表のセル内の改行は `<br>` のまま残す。markdownの表は生の改行を入れられないため。
+- `<a href='20250205'>` は `[…](20250205.md)` になり、版をまたいだリンクがmd同士でつながる。
+
+**変換で落ちる情報が2つある。** `<span class='battle_change_caution'>` の色分けと、`<div data-word='combo_count'>` の用語マーカー。どちらも囲いを外して中身の文字だけ残すので、そこが強調だったこと・用語だったことはmdからは分からない。必要ならJSONを見る。
+
 ## update-maintenance/ — アップデート・メンテナンスのお知らせ(抜粋)
 
 出典: `https://www.streetfighter.com/6/buckler/ja-jp/information/detail/<slug>`
