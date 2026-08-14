@@ -76,7 +76,7 @@ node patch-digest/tools/verify-digest.mjs
 - [x] 2024.05 [battle-change/202405](../patch-notes/battle-change/202405.md)
 - [x] 2024.06.26 [battle-change/20240626](../patch-notes/battle-change/20240626.md)
 - [x] 2024.08.01 [update-maintenance/20240801](../patch-notes/update-maintenance/20240801.json)
-- [ ] 2024.09.24 battle-change/20240924
+- [x] 2024.09.24 [battle-change/20240924](../patch-notes/battle-change/20240924.md)
 - [ ] 2024.12.02 battle-change/20241202
 - [ ] 2024.12.07 20241207.md (X告知)
 - [ ] 2025.02.05 battle-change/20250205
