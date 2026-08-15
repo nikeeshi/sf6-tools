@@ -114,5 +114,5 @@ node patch-digest/tools/verify-digest.mjs
 - [x] 2026.04.15 [battle-change/20260415](../patch-notes/battle-change/20260415.md)
 - [x] 2026.05.28 [battle-change/20260528](../patch-notes/battle-change/20260528.md)
 - [x] 2026.07.02 [update-maintenance/20260702](../patch-notes/update-maintenance/20260702.json)
-- [ ] 2026.08.03 battle-change/20260803
-- [ ] 2026.08.12 20260812.md (X告知)
+- [x] 2026.08.03 [battle-change/20260803](../patch-notes/battle-change/20260803.md)
+- [x] 2026.08.12 [20260812.md](../patch-notes/20260812.md) (X告知)
