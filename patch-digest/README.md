@@ -100,7 +100,7 @@ node patch-digest/tools/verify-digest.mjs
 - [x] 2024.12.02 [battle-change/20241202](../patch-notes/battle-change/20241202.md)
 - [x] 2024.12.07 [20241207.md](../patch-notes/20241207.md) (X告知)
 - [x] 2025.02.05 [battle-change/20250205](../patch-notes/battle-change/20250205.md)
-- [ ] 2025.06 battle-change/202506
+- [x] 2025.06 [battle-change/202506](../patch-notes/battle-change/202506.md)
 - [ ] 2025.06.06 update-maintenance/20250606
 - [ ] 2025.06.26 update-maintenance/20250626
 - [ ] 2025.07.04 update-maintenance/20250704
