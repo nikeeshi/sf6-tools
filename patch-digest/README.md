@@ -110,7 +110,7 @@ node patch-digest/tools/verify-digest.mjs
 - [x] 2025.10.22 [battle-change/20251022](../patch-notes/battle-change/20251022.md)
 - [x] 2025.11.13 [battle-change/20251113](../patch-notes/battle-change/20251113.md)
 - [x] 2025.12.16 [battle-change/20251216](../patch-notes/battle-change/20251216.md)
-- [ ] 2026.03.17 battle-change/20260317
+- [x] 2026.03.17 [battle-change/20260317](../patch-notes/battle-change/20260317.md)
 - [ ] 2026.04.15 battle-change/20260415
 - [ ] 2026.05.28 battle-change/20260528
 - [ ] 2026.07.02 update-maintenance/20260702
