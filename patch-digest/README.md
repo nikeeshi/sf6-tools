@@ -104,8 +104,8 @@ node patch-digest/tools/verify-digest.mjs
 - [x] 2025.06.06 [update-maintenance/20250606](../patch-notes/update-maintenance/20250606.json)
 - [x] 2025.06.26 [update-maintenance/20250626](../patch-notes/update-maintenance/20250626.json)
 - [x] 2025.07.04 [update-maintenance/20250704](../patch-notes/update-maintenance/20250704.json)
-- [ ] 2025.08.05 battle-change/20250805
-- [ ] 2025.09.01 battle-change/20250901
+- [x] 2025.08.05 [battle-change/20250805](../patch-notes/battle-change/20250805.md)
+- [x] 2025.09.01 [battle-change/20250901](../patch-notes/battle-change/20250901.md)
 - [ ] 2025.10.15 battle-change/20251015
 - [ ] 2025.10.22 battle-change/20251022
 - [ ] 2025.11.13 battle-change/20251113
