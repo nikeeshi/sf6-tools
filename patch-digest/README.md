@@ -50,7 +50,7 @@ node patch-digest/tools/verify-digest.mjs
 - 既存の節の中で版の時系列順になる位置に差し込む
 - 同じ技の節が既にあるか確認する
 
-**重複した節は32件すべて読み終えてから一度だけ統合する。** そのとき機械任せにせず、重複した節の中身を両方表示してから畳むこと。片方にしか無い項目を消す事故を一度起こしている。
+**重複した節は32件すべて読み終えてから一度だけ統合する。** 手順は下の[重複した節の統合](#重複した節の統合)にある。
 
 ### 直接編集してよいファイル
 
@@ -116,3 +116,47 @@ node patch-digest/tools/verify-digest.mjs
 - [x] 2026.07.02 [update-maintenance/20260702](../patch-notes/update-maintenance/20260702.json)
 - [x] 2026.08.03 [battle-change/20260803](../patch-notes/battle-change/20260803.md)
 - [x] 2026.08.12 [20260812.md](../patch-notes/20260812.md) (X告知)
+
+## 重複した節の統合
+
+32版すべてを読み終えた後の作業。末尾追記でできた `moves/` の重複節を1キャラずつ畳む。
+
+対象は**完全同名の節だけ**。版サフィックスを外すと文字列が一致する組を指す。版サフィックスには `(2026.08.03)` の日単位と `(2025.06)` の年月単位がある。コマンド注記の有無が違うだけの組(例: `## 螭吻(→+強P)` と `## 螭吻(2025.06)`)は、別技を指している場合があるので触らない。
+
+1キャラの手順。
+
+- 先に出てくる節へ後の節の項目を畳み、項目は日付昇順に並べる
+- 見出しはコマンド注記のある方を残し、版サフィックス(例: `## 立ち中K(2026.08.03)`)は落とす。日付は項目行の先頭にあるので見出し側には要らない
+- 重複していない節に付いた版サフィックスも、そのファイルを触るついでに落とす。ただし落とすと別の節と同名になる場合は、対象外の組なので付けたままにする
+- 畳んだら `verify-digest.mjs` を走らせる。項目を1行落とすと、参照されない原文項目として検出される
+
+コミットは3〜5キャラで1回。
+
+完全同名の重複を持つのは以下の26件。残る4件(alex, cviper, elena, ingrid)は重複が無いので、版サフィックスも残したままになっている。
+
+- [x] [aki](moves/aki.md)
+- [x] [blanka](moves/blanka.md)
+- [x] [cammy](moves/cammy.md)
+- [x] [chunli](moves/chunli.md)
+- [ ] [deejay](moves/deejay.md)
+- [ ] [dhalsim](moves/dhalsim.md)
+- [ ] [ed](moves/ed.md)
+- [ ] [ehonda](moves/ehonda.md)
+- [ ] [gouki](moves/gouki.md)
+- [ ] [guile](moves/guile.md)
+- [ ] [jamie](moves/jamie.md)
+- [ ] [jp](moves/jp.md)
+- [ ] [juri](moves/juri.md)
+- [ ] [ken](moves/ken.md)
+- [ ] [kimberly](moves/kimberly.md)
+- [ ] [lily](moves/lily.md)
+- [ ] [luke](moves/luke.md)
+- [ ] [mai](moves/mai.md)
+- [ ] [manon](moves/manon.md)
+- [ ] [marisa](moves/marisa.md)
+- [ ] [rashid](moves/rashid.md)
+- [ ] [ryu](moves/ryu.md)
+- [ ] [sagat](moves/sagat.md)
+- [ ] [terry](moves/terry.md)
+- [ ] [vega](moves/vega.md)
+- [ ] [zangief](moves/zangief.md)
