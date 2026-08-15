@@ -78,7 +78,7 @@ node patch-digest/tools/verify-digest.mjs
 
 ## 持ち越している疑問
 
-- **フォースブロウダウン**が[強制ダウン](system.md)と同じものか未確定。この語は 2024.02.27 に1回、2025.12.16 に2回、2026.08.03 に5回出てくるので、読み進めれば判定できる。
+- **フォースブロウダウン**が[強制ダウン](system.md)と同じものか未確定。**原文からは判定できないことが確定した。** 当初は「2025.12.16 に2回、2026.08.03 に5回出てくるので読み進めれば判定できる」としていたが、実際に数えると **フォースブロウダウンは全パッチノート中 2024.02.27 の1回だけ**、強制ダウンも 2023.12.01 の1回だけだった。両方とも1回ずつしか出ないため、原文の対比から結論は出ない。判定するならゲーム内表示など原文の外を当たる必要がある。
 
 ## 読んだ版
 
@@ -106,10 +106,10 @@ node patch-digest/tools/verify-digest.mjs
 - [x] 2025.07.04 [update-maintenance/20250704](../patch-notes/update-maintenance/20250704.json)
 - [x] 2025.08.05 [battle-change/20250805](../patch-notes/battle-change/20250805.md)
 - [x] 2025.09.01 [battle-change/20250901](../patch-notes/battle-change/20250901.md)
-- [ ] 2025.10.15 battle-change/20251015
-- [ ] 2025.10.22 battle-change/20251022
-- [ ] 2025.11.13 battle-change/20251113
-- [ ] 2025.12.16 battle-change/20251216
+- [x] 2025.10.15 [battle-change/20251015](../patch-notes/battle-change/20251015.md)
+- [x] 2025.10.22 [battle-change/20251022](../patch-notes/battle-change/20251022.md)
+- [x] 2025.11.13 [battle-change/20251113](../patch-notes/battle-change/20251113.md)
+- [x] 2025.12.16 [battle-change/20251216](../patch-notes/battle-change/20251216.md)
 - [ ] 2026.03.17 battle-change/20260317
 - [ ] 2026.04.15 battle-change/20260415
 - [ ] 2026.05.28 battle-change/20260528
