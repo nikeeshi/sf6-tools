@@ -14,6 +14,5 @@
 
 ## このプロジェクトについて
 
-このリポジトリはClaude(Anthropic)との共同作業で構築している。実装・修正のコミットには
-`Co-Authored-By: Claude <noreply@anthropic.com>` を付与し、Claudeが関わった変更であることが
-コミット履歴から分かるようにしている。
+このリポジトリはClaude(Anthropic)との共同作業で構築している。
+ClaudeがAuthorじゃないコミットには `Co-Authored-By: Claude <noreply@anthropic.com>` を付ける。
