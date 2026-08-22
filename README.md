@@ -11,12 +11,11 @@
 - [combo-count](combo-count/README.md) — コンボカウント(始動値/加算値/上限値)の実測記録
 - [info-sources](info-sources/README.md) — 攻略情報の情報源の索引(キャラ別の発信者・サイト)
 - [patch-notes](patch-notes/README.md) — 公式パッチノート・不具合修正告知の原文保管
-- [patch-digest](patch-digest/README.md) — パッチノートの原文から読み取った仕様・用語・変更履歴
+- [patch-digest](patch-digest/README.md) — パッチノートを読んで拾った仕様・用語の分類
 
 作りたいものと着手中の把握は [BACKLOG.md](BACKLOG.md) で行う。
 
 ## このプロジェクトについて
 
-このリポジトリはClaude(Anthropic)との共同作業で構築している。実装・修正のコミットには
-`Co-Authored-By: Claude <noreply@anthropic.com>` を付与し、Claudeが関わった変更であることが
-コミット履歴から分かるようにしている。
+このリポジトリはClaude(Anthropic)との共同作業で構築している。
+ClaudeがAuthorじゃないコミットには `Co-Authored-By: Claude <noreply@anthropic.com>` を付ける。
