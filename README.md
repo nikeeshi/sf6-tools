@@ -13,6 +13,8 @@
 - [patch-notes](patch-notes/README.md) — 公式パッチノート・不具合修正告知の原文保管
 - [patch-digest](patch-digest/README.md) — パッチノートを読んで拾った仕様・用語の分類
 
+作りたいものと着手中の把握は [BACKLOG.md](BACKLOG.md) で行う。
+
 ## このプロジェクトについて
 
 このリポジトリはClaude(Anthropic)との共同作業で構築している。
